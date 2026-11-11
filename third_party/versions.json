@@ -1,0 +1,17 @@
+[
+  {
+    "repo": "raspberrypi/pico-sdk",
+    "revision": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+    "directory": "third_party\\pico-sdk"
+  },
+  {
+    "repo": "ARM-software/CMSIS-DAP",
+    "revision": "12636590eec66fae2d1bba4518749426ad5a4595",
+    "directory": "third_party\\CMSIS-DAP"
+  },
+  {
+    "repo": "hathach/tinyusb",
+    "revision": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
+    "directory": "third_party\\pico-sdk\\lib\\tinyusb"
+  }
+]

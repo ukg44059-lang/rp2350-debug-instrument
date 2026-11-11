@@ -1,0 +1,577 @@
+[
+  {
+    "file": "01_chip/RP2350_Datasheet.pdf",
+    "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008373-DS-3-rp2350-datasheet.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 11094994,
+    "sha256": "a638d6780da919162660691bfa02c6dcf7c2a0b6e9f18e2d7519c80b664a2e39",
+    "status": "ok",
+    "pages": 1371,
+    "title": "RP2350 Datasheet"
+  },
+  {
+    "file": "01_chip/Hardware_Design_with_RP2350.pdf",
+    "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-2-hardware-design-with-rp2350.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 8543080,
+    "sha256": "cef88bc7d87e67b4262ee15f2b94b03566667143f4e8daf6931828bef6408059",
+    "status": "ok",
+    "pages": 25,
+    "title": "Hardware design with RP2350"
+  },
+  {
+    "file": "01_chip/RP2350B_Minimal_KiCad.zip",
+    "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 1055606,
+    "sha256": "586c6e0d55452cdda6354ffde964e9c3b11a9f91eb903f5b5f67e47788af3baa",
+    "status": "ok",
+    "entries": 7
+  },
+  {
+    "file": "02_board/RP2350B-Plus-W_Schematic.pdf",
+    "source": "https://files.waveshare.com/wiki/RP2350B-Plus-W/RP2350B-Plus-W.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 69628,
+    "sha256": "50f6a3b510c340df3b229a9f10ca276bfe62c70a101e5f653c2826dc4132341a",
+    "status": "ok",
+    "pages": 1,
+    "title": "New Output"
+  },
+  {
+    "file": "03_examples/RP2350B-Plus-W_Official_Demo.zip",
+    "source": "https://www.waveshare.net/w/upload/3/3e/RP2350B-Plus-W.zip",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 1365896,
+    "sha256": "dde17e2e26ad0d494cda74aaac14d3daa044c8c95253ba09d0ec103fbbe8bfe9",
+    "status": "ok",
+    "entries": 46
+  },
+  {
+    "file": "03_examples/Waveshare_RP2350B_Arduino_Board.zip",
+    "source": "https://www.waveshare.net/w/upload/8/8b/WAVESHARE-RP2350B-Board.zip",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 255452,
+    "sha256": "03308be0b90a75011635e84c016ce776443ef75f3f1ac5907d2d4557dececa0e",
+    "status": "ok",
+    "entries": 1
+  },
+  {
+    "file": "04_reference/Pico2W_Datasheet.pdf",
+    "source": "https://pip-assets.raspberrypi.com/categories/1088-raspberry-pi-pico-2-w/documents/RP-008304-DS-2-pico-2-w-datasheet.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 3791194,
+    "sha256": "8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2",
+    "status": "ok",
+    "pages": 24,
+    "title": "Raspberry Pi Pico 2 W Datasheet"
+  },
+  {
+    "file": "04_reference/Getting_Started_with_Pico2.pdf",
+    "source": "https://www.waveshare.net/w/upload/7/7f/Getting-started-with-pico-2.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 17148701,
+    "sha256": "17526b01031aa2afb91a124de024bf13196f470d36f26a2fa257b15a778bcf29",
+    "status": "ok",
+    "pages": 53,
+    "title": "Getting started with Raspberry Pi Pico-series"
+  },
+  {
+    "file": "04_reference/Pico_C_SDK.pdf",
+    "source": "https://www.waveshare.net/w/upload/1/1f/Raspberry-pi-pico-2-c-sdk.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 5681093,
+    "sha256": "8843c21783ac08eb7cfb2369216a3935353a712a098a24fda24c52e840b5e375",
+    "status": "ok",
+    "pages": 655,
+    "title": "Raspberry Pi Pico-series C/C++ SDK"
+  },
+  {
+    "file": "04_reference/Pico_Python_SDK.pdf",
+    "source": "https://www.waveshare.net/w/upload/7/7c/Raspberry-pi-pico-2-python-sdk.pdf",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 2313540,
+    "sha256": "f609c7cf2f47cc12cd69eb82e3bd872cb01f279d3924c01c44d2604bb436733b",
+    "status": "ok",
+    "pages": 54,
+    "title": "Raspberry Pi Pico-series Python SDK"
+  },
+  {
+    "file": "02_board/wiki_assets/00.jpg",
+    "source": "https://www.waveshare.net/w/upload/2/26/RP2350B-Plus-W-1.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 108082,
+    "sha256": "301861e17616b4674d2d54add6623ee6aeb27009793042c40494fb25bc5a615e",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/01.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/0/07/RP2350B-Plus-W-details-inter.jpg/680px-RP2350B-Plus-W-details-inter.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 76805,
+    "sha256": "dd1ae07e47f9e0e44ed085b613893ce9fb8d33d472571929cb1ac054e488261f",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/02.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/d/d4/RP2350B-Plus-W-details-inter-1.jpg/680px-RP2350B-Plus-W-details-inter-1.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 53553,
+    "sha256": "b9710a8e7fe64b33f8ee0342cb0088359b99bb6e949f791467b234ebd21ba7c7",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/03.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/9/90/RP2350B-Plus-W-details-size.jpg/800px-RP2350B-Plus-W-details-size.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 42011,
+    "sha256": "e7e70fdf8dd1acbcf2e26f47fe2354ddae44e07da8dc4acf74734551f7d3d5d5",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/04.gif",
+    "source": "https://www.waveshare.net/w/upload/d/d1/Pico_MicroPython.gif",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 2565983,
+    "sha256": "28cbc31d93dfbcbfbeb8673d148fb564288fa6db5985ded209a403f6d0392697",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/05.gif",
+    "source": "https://www.waveshare.net/w/upload/c/cd/Pico_Blink.gif",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 3433792,
+    "sha256": "25dca4604b2b5c674878be06612b15c51d2917f2740fcf046f0e06b6a7df43e0",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/06.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/e/e4/Pico-R3-Tonny1.png/700px-Pico-R3-Tonny1.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 112136,
+    "sha256": "9c54e05bdfa4f4a8b8e9c242a0f6110b942909cd15556f7e54b8fe8da0ddd681",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/07.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/4/47/Raspberry-Pi-Pico-Basic-Kit-M-2.png/700px-Raspberry-Pi-Pico-Basic-Kit-M-2.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 133806,
+    "sha256": "8ea6e25ef16a1bb2eeeb5f6a5d742cdcc0815744fe892956f3783bbf0e384d1d",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/08.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/d/db/Raspberry-Pi-Pico-Basic-Kit-M-3.png/700px-Raspberry-Pi-Pico-Basic-Kit-M-3.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 219537,
+    "sha256": "6074de6b1ea954f4ff6552f1ebe87f013c2a75d9616e378595da60ffb6a418be",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/09.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/9/9c/Raspberry-Pi-Pico2-Python.png/700px-Raspberry-Pi-Pico2-Python.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 155134,
+    "sha256": "7ca992c38ba2f94bc3c0c2ae748a38f9c70dccc13102861968e6a86d35076a19",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/10.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/7/76/Pico-vscode-1.JPG/600px-Pico-vscode-1.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 24998,
+    "sha256": "8cd37d8608279d4c9f6ef2ce48a2e79f9de7444312a96532b778a59024117a61",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/11.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/e/e3/Pico-vscode-2.JPG/600px-Pico-vscode-2.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 22780,
+    "sha256": "54205fb3c927108a08cd5f68ce2ad3edd16bf5cd311c06550bb303ecc6c0948a",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/12.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/6/66/Pico-vscode-3.JPG/300px-Pico-vscode-3.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 12296,
+    "sha256": "437dc4783f8a9fba1f81b9b404188712f3615d9594316d2e62d59194732b0d62",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/13.jpg",
+    "source": "https://www.waveshare.net/w/upload/d/dc/Pico-vscode-4.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 60723,
+    "sha256": "5bf8926f0169ad004fc1b6e9e5eb36fce7c040d893a642ca32670193dacd511d",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/14.jpg",
+    "source": "https://www.waveshare.net/w/upload/f/f2/Pico-vscode-5.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 86913,
+    "sha256": "9d02ef656256c0127cb25d16dd11fa3a83f53b96583c7b054d75f8c362ae8839",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/15.jpg",
+    "source": "https://www.waveshare.net/w/upload/a/ab/Pico-vscode-6.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 109118,
+    "sha256": "98d1d6b7ee1c723e1c51e87e4ebea44adcef985f158a5d38a47a0d44c9711302",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/16.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/a/a2/Pico-vscode-7.JPG/600px-Pico-vscode-7.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 15179,
+    "sha256": "56a45c95ce379da70812182870a2ca46825828ca33ac7e0cb10d372a6109c1ca",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/17.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/d/d4/Pico-vscode-8.JPG/600px-Pico-vscode-8.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 27490,
+    "sha256": "e8719a9755d7c2ded30f5ff10908bd78ea76c8cd5738a1e8c3029477cb410dd5",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/18.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/a/a2/Pico-vscode-9.JPG/600px-Pico-vscode-9.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 30245,
+    "sha256": "c00ce98a478266169d52e02cf6b6c33347f9c8e61f5c7402eb974b5611a15323",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/19.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/6/6e/Pico-vscode-10.JPG/600px-Pico-vscode-10.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 23639,
+    "sha256": "70df85f28e042eb2e86d8388c6130a2a6928fc2373834798c830e7d5e60e30ee",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/20.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/3/35/Pico-vscode-11.JPG/600px-Pico-vscode-11.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 20378,
+    "sha256": "960f15202c93f40ccd2fddfb1a1d27a3869ba852808d4349afeade0f535a7732",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/21.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/0/0d/Pico-vscode-12.JPG/600px-Pico-vscode-12.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 16660,
+    "sha256": "04999b060c4a81a1fcd1b3a01b94394bcd27825d72ab4c6032fd30d7d75299fd",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/22.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/c/c5/Pico-vscode-13.JPG/600px-Pico-vscode-13.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 18723,
+    "sha256": "a402c251430b0a75777713adb335704847dd7041d21467535c37d135eac65d79",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/23.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/6/6d/Pico-vscode-14.JPG/600px-Pico-vscode-14.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 10803,
+    "sha256": "37aa80423d8c8ef9299eedd07b4263de4d5826f79dc94614d091b65b6257fa55",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/24.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/3/35/Pico-vscode-15.JPG/600px-Pico-vscode-15.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 16926,
+    "sha256": "95ef8586b10b16ef36846aafa1825a499583ea8d46c1c2f88c100a11c2c1a947",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/25.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/1/1f/Pico-vscode-16.JPG/600px-Pico-vscode-16.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 8859,
+    "sha256": "e228238dd45ce8bbc2c9cb1220e3a1980c7863d86d2af3c3e2591e5bd2a824f2",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/26.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/e/e6/Pico-vscode-17.JPG/600px-Pico-vscode-17.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 9095,
+    "sha256": "6c8c281eeac3da3fb4463c196dbf37c898c7f4c7063f481953bd4e19c61b0d78",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/27.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/7/7b/Pico-vscode-18.JPG/600px-Pico-vscode-18.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 19706,
+    "sha256": "d68e013ebcf744361087ef53c3e81fbb93283c23d515c75ab438dec98c8a0521",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/28.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/e/e5/Pico-vscode-19.JPG/600px-Pico-vscode-19.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 18433,
+    "sha256": "c0a658afbaacd85b560ab9fb99d64fb9ee235ab7176fdec1716aeb8c1aeff82b",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/29.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/f/f7/Pico-vscode-20.JPG/600px-Pico-vscode-20.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 19336,
+    "sha256": "842c120897dfc9c4af065473bb667a7fc11b9de0ab1574e2961fd5631202f625",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/30.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/0/09/Pico-vscode-24.jpg/600px-Pico-vscode-24.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 18344,
+    "sha256": "ca73b338e6d9325a11b7e57fb9758ed3b4d3c2945c59cc1dc4efc9d373d95973",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/31.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/9/9b/Pico-vscode-23.jpg/600px-Pico-vscode-23.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 18270,
+    "sha256": "7d3f5bb36f2c000ede3c7f332204e92c62afc481d2f707a64c164e09c075f65b",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/32.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/8/8b/Pico-vscode-21.JPG/600px-Pico-vscode-21.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 22518,
+    "sha256": "a024a64b5b822c0b42441a22df382d2fc5f2864de871800a4412795e834d3258",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/33.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/9/9f/Pico-vscode-22.JPG/600px-Pico-vscode-22.JPG",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 31599,
+    "sha256": "47c0c52a33c089a3b93ce9fae70a8ef847be44b4d5afbece1b6856f8d683d389",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/34.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/0/02/Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg/600px-Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 48192,
+    "sha256": "d6c69b3f8773ff15924209787568e37acf2110074f9941877c8d8521e2dba40d",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/35.png",
+    "source": "https://www.waveshare.net/w/upload/e/e5/%E4%BB%85%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%8D%90%E8%B5%A0.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 45894,
+    "sha256": "7cf315169b0e728e1e5c5388e356ab58ee33b8f80cf583a3d4f4e1adf96a59a1",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/36.gif",
+    "source": "https://www.waveshare.net/w/upload/9/92/IDE%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0-1.gif",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 57962,
+    "sha256": "2071ca721e3d5f65114c5f8275c0afe5a38b50277824119a14e745b362e26360",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/37.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/8/83/Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg/600px-Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 22958,
+    "sha256": "feec279d24ababfe35536573e59e52b4e795f236298b6449c0a7718fdb3f803c",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/38.jpg",
+    "source": "https://www.waveshare.net/w/upload/0/0a/%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 9442,
+    "sha256": "c13e6b2c56945a94454500cefae8201b466d107fe11d6bdbcb3e49f749877791",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/39.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/6/67/%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg/600px-%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 22735,
+    "sha256": "15d24857ef41a4364c2bf0d4e502de0f0f6b7d8194d877579f93d4db4f90fa41",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/40.png",
+    "source": "https://www.waveshare.net/w/upload/6/63/%E9%A6%96%E9%80%89%E9%A1%B9%E6%B0%B4%E5%8D%B0-1.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 24452,
+    "sha256": "00df1109fee92d56696e3d0b38aa6e743d386c82916ea5da1963ad43e7b3c4aa",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/41.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/6/68/Pico%E9%A6%96%E9%80%89%E9%A1%B9.png/600px-Pico%E9%A6%96%E9%80%89%E9%A1%B9.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 83671,
+    "sha256": "a19e5ff9c8abe6eb7e4f3e2263893dfd6b7ae6dcc3b9cec48584a7128c863d1f",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/42.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/0/0c/%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png/600px-%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 31425,
+    "sha256": "b2d0bd8dbd67ab15a95656a92db9e96c515772e3f92801628fddbc0012038064",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/43.png",
+    "source": "https://www.waveshare.net/w/upload/8/80/%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8-1.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 13602,
+    "sha256": "4604729cd2474c3629b6ddaaf3407eb2772e680721272e3411ce661a5c482e79",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/44.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/f/f8/Rp2040%E5%8C%85.png/600px-Rp2040%E5%8C%85.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 57949,
+    "sha256": "e2a691599e9158a4e69f735320ac47591583e5744c53a3101a8cd87b30aa805d",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/45.gif",
+    "source": "https://www.waveshare.net/w/upload/a/ac/Pico%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E7%BA%BF.gif",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 866392,
+    "sha256": "fb895f4197e00dff51060d22c9076b7447c3766e059e84f1a4851c7ccc7bb1d5",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/46.png",
+    "source": "https://www.waveshare.net/w/upload/f/f2/Pico%E8%BF%9E%E6%8E%A5%E5%89%8D%E7%AB%AF%E5%8F%A3.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 83731,
+    "sha256": "29d6504f50e1bd9487ed9455fdd81dd6922738891642cededfc5c555ebbc682d",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/47.png",
+    "source": "https://www.waveshare.net/w/upload/f/f5/Pico%E8%BF%9E%E6%8E%A5%E5%90%8Euf2.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 60140,
+    "sha256": "baad5944720733baea9da54e04d86f08c17388fa4f8f70da1e75376e030486f8",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/48.png",
+    "source": "https://www.waveshare.net/w/upload/thumb/3/3c/%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png/600px-%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 124205,
+    "sha256": "f63f1c1715d798f7d37172079f868cb10bad57040143011001ea240c2220ca1b",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/49.png",
+    "source": "https://www.waveshare.net/w/upload/1/10/Arduono-Raspberrypi_pico.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 2475,
+    "sha256": "f7094edf9608efe939b72d5b9d2f949645ac41e58851e2af3ab0000b3376c9c0",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/50.png",
+    "source": "https://www.waveshare.net/w/upload/e/ee/Pico%E4%B8%8A%E4%BC%A0%E7%A8%8B%E5%BA%8F.png",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 4912,
+    "sha256": "1f039c086010b6538ce04ae70f71de2b86ee19804df7886d552e1757549eaf14",
+    "status": "ok"
+  },
+  {
+    "file": "02_board/wiki_assets/51.jpg",
+    "source": "https://www.waveshare.net/w/upload/thumb/3/34/Zzy.jpg/200px-Zzy.jpg",
+    "download_date": "2026-11-01",
+    "timezone": "America/Denver",
+    "bytes": 17530,
+    "sha256": "d5c5aef61e3f45d10d9b8494933087f5e1b7e660c7bd4f1ef6af39918fa85c41",
+    "status": "ok"
+  }
+]

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="zh-Hans-CN" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>RP2350B-Plus-W - Waveshare Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"ad58b6aca8e20b1868fe7d49","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"RP2350B-Plus-W","wgTitle":"RP2350B-Plus-W","wgCurRevisionId":132813,"wgRevisionId":132813,"wgArticleId":28047,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["SPI接口","I2C接口","UART接口","模块","树莓派开发板"],"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgRelevantPageName":"RP2350B-Plus-W","wgRelevantArticleId":28047,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
+"ext.gadget.tabber":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.tweeki.styles":"ready","skins.tweeki.bootstraptheme.styles":"ready","skins.tweeki.externallinks.styles":"ready","skins.tweeki.awesome.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.FancyBoxThumbs","ext.gadget.subnavber","ext.gadget.slidenav","ext.HighlightjsIntegration","skins.tweeki.messages","skins.tweeki.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});mw.user.options.set({"variant":"zh-cn"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=jquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.tweeki.awesome.styles%7Cskins.tweeki.bootstraptheme.styles%7Cskins.tweeki.externallinks.styles%7Cskins.tweeki.styles&amp;only=styles&amp;skin=tweeki"/>
+<script async="" src="/w/load.php?lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=tweeki"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=ext.gadget.tabber&amp;only=styles&amp;skin=tweeki"/>
+<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=site.styles&amp;only=styles&amp;skin=tweeki"/>
+<meta name="generator" content="MediaWiki 1.35.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Waveshare Wiki (zh-cn)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.waveshare.net/w/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Waveshare Wiki的Atom feed" href="/w/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-RP2350B-Plus-W rootpage-RP2350B-Plus-W skin-tweeki action-view tweeki-animateLayout tweeki-non-advanced tweeki-user-anon">			<!-- navbar -->
+			<div id="mw-navigation" class="navbar navbar-default navbar-fixed-top navbar-expand-lg fixed-top navbar-light bg-light" role="navigation">
+				<h2>导航菜单</h2>
+				<div id="mw-head" class="navbar-inner">
+					<div class="container">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="/wiki/Main_Page" class="navbar-brand"><img src="https://www.waveshare.net/w/upload/b/b6/Waveshare-logo.png" alt="Waveshare Wiki" /></a>
+						</div>
+
+						<div id="navbar" class="navbar-collapse collapse">
+													<ul class="nav navbar-nav">
+							<li class="nav"><a href="https://www.waveshare.net" id="n-https.253A.252F.252Fwww.waveshare.net" rel="nofollow" target="_blank">微雪商城</a></li><li class="nav"><a href="#" id="n-raspberry-pi" class="dropdown-toggle" data-toggle="dropdown">Raspberry Pi <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-boards-.25E4.25B8.25BB.25E6.259D.25BF.252F.25E5.25A5.2597.25E4.25BB.25B6.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Boards 主板/套件]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Boards">主板/套件</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-displays-.25E6.2598.25BE.25E7.25A4.25BA.25E5.25B1.258F.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Displays 显示屏]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Displays">显示屏</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-cameras-.25E6.2591.2584.25E5.2583.258F.25E5.25A4.25B4.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Cameras 摄像头]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Cameras">摄像头</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-expansions-.25E6.2589.25A9.25E5.25B1.2595.25E6.259D.25BF.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Expansions 扩展板]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Expansions">扩展板</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-laptops-.25E7.25AC.2594.25E8.25AE.25B0.25E6.259C.25AC.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Laptops 笔记本]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Laptops">笔记本</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-robots-.25E6.259C.25BA.25E5.2599.25A8.25E4.25BA.25BA.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Robots 机器人]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Robots">机器人</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523rpi-games-.25E6.25B8.25B8.25E6.2588.258F.25E6.259C.25BA.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#RPi-Games 游戏机]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#RPi-Games">游戏机</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523android-linux-boards-android.252Flinux.25E4.25B8.25BB.25E6.259D.25BF.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Android-Linux-Boards Android/Linux主板]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Android-Linux-Boards">Android/Linux主板</a></a></li></ul></li><li class="nav"><a href="#" id="n-.25E4.25BA.25BA.25E5.25B7.25A5.25E6.2599.25BA.25E8.2583.25BD" class="dropdown-toggle" data-toggle="dropdown">人工智能 <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523jetson-ai-boards-.25E4.25B8.25BB.25E6.259D.25BF.252F.25E5.25A5.2597.25E4.25BB.25B6.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Boards 主板/套件]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Boards">主板/套件</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523jetson-ai-displays-.25E6.2598.25BE.25E7.25A4.25BA.25E5.25B1.258F.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Displays 显示屏]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Displays">显示屏</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523jetson-ai-cameras-.25E6.2591.2584.25E5.2583.258F.25E5.25A4.25B4.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Cameras 摄像头]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Cameras">摄像头</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523jetson-ai-hat-.25E6.2589.25A9.25E5.25B1.2595.25E6.259D.25BF.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Jetson-AI-HAT 扩展板]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Jetson-AI-HAT">扩展板</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523jetson-ai-robots-.25E6.259C.25BA.25E5.2599.25A8.25E4.25BA.25BA.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Robots 机器人]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Jetson-AI-Robots">机器人</a></a></li></ul></li><li class="nav"><a href="#" id="n-.25E6.2598.25BE.25E7.25A4.25BA.25E5.25B1.258F" class="dropdown-toggle" data-toggle="dropdown">显示屏 <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523display-lcd-oleds-lcd.252Foled.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Display-LCD-OLEDs LCD/OLED]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Display-LCD-OLEDs">LCD/OLED</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523display-e-paper-e-paper.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Display-e-Paper e-Paper]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Display-e-Paper">e-Paper</a></a></li></ul></li><li class="nav"><a href="#" id="n-.25E6.25A8.25A1.25E5.259D.2597" class="dropdown-toggle" data-toggle="dropdown">模块 <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523long-range-wireless-comm-.25E8.25BF.259C.25E8.25B7.259D.25E7.25A6.25BB.25E6.2597.25A0.25E7.25BA.25BF.25E9.2580.259A.25E4.25BF.25A1.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Long-range-wireless-comm 远距离无线通信]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Long-range-wireless-comm">远距离无线通信</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523short-range-wireless-comm-.25E8.25BF.2591.25E8.25B7.259D.25E7.25A6.25BB.25E6.2597.25A0.25E7.25BA.25BF.25E9.2580.259A.25E4.25BF.25A1.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Short-range-wireless-comm 近距离无线通信]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Short-range-wireless-comm">近距离无线通信</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523wired-communication-.25E6.259C.2589.25E7.25BA.25BF.25E9.2580.259A.25E4.25BF.25A1.252F.25E6.258E.25A5.25E5.258F.25A3.25E8.25BD.25AC.25E6.258D.25A2.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Wired-communication 有线通信/接口转换]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Wired-communication">有线通信/接口转换</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523misc-cameras-av-.25E6.2591.2584.25E5.2583.258F.25E5.25A4.25B4.252F.25E9.259F.25B3.25E8.25A7.2586.25E9.25A2.2591.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Misc-cameras-av 摄像头/音视频]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Misc-cameras-av">摄像头/音视频</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523misc-sensor-modules-.25E4.25BC.25A0.25E6.2584.259F.25E5.2599.25A8.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Misc-sensor-modules 传感器]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Misc-sensor-modules">传感器</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523misc-servos-motors-.25E7.2594.25B5.25E6.259C.25BA.252F.25E8.2588.25B5.25E6.259C.25BA.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Misc-servos-motors 电机/舵机]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Misc-servos-motors">电机/舵机</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523misc-other-modules-.25E5.25A4.25A7.25E6.259D.2582.25E7.2583.25A9.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Misc-other-modules 大杂烩]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Misc-other-modules">大杂烩</a></a></li></ul></li><li class="nav"><a href="#" id="n-.25E6.259C.25BA.25E5.2599.25A8.25E4.25BA.25BA" class="dropdown-toggle" data-toggle="dropdown">机器人 <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523robotics-cars-.25E6.2599.25BA.25E8.2583.25BD.25E8.25BD.25A6.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Robotics-cars 智能车]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Robotics-cars">智能车</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523robotics-drivers-sensors-.25E9.25A9.25B1.25E5.258A.25A8.25E5.2599.25A8.252F.25E4.25BC.25A0.25E6.2584.259F.25E5.2599.25A8.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Robotics-drivers-sensors 驱动器/传感器]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Robotics-drivers-sensors">驱动器/传感器</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523robotics-robot-arms-.25E6.259C.25BA.25E6.25A2.25B0.25E6.2589.258B.252F.25E4.25BA.2591.25E5.258F.25B0.25E6.258E.25A7.25E5.2588.25B6.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Robotics-robot-arms 机械手/云台控制]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Robotics-robot-arms">机械手/云台控制</a></a></li></ul></li><li class="nav"><a href="#" id="n-mcu.252Ffpga" class="dropdown-toggle" data-toggle="dropdown">MCU/FPGA <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523arduino-main-boards-arduino.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#Arduino-main-boards Arduino]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#Arduino-main-boards">Arduino</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523micro.253Abit-micro.253Abit.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#micro:bit micro:bit]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#micro:bit">micro:bit</a></a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523mcu.2farm-stm32" class="PIC"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#MCU.2FARM STM32" tabindex="-1">LPC</a></li><li id="n-.255Bhttps.253A.252F.252F.257B.257Bservername.257D.257D.252Fwiki.252Fmain_page.2523fpga-fpga.255D"><a href="INVALID-TITLE:[https://www.waveshare.net/wiki/Main_Page#FPGA FPGA]" tabindex="-1"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/wiki/Main_Page#FPGA">FPGA</a></a></li></ul></li>							</ul>
+						
+													<ul class="nav navbar-nav navbar-right">
+							</ul>
+				<form class="navbar-form navbar-right" action="/w/index.php" id="searchform">
+					<div class="form-group"><input type="search" name="search" placeholder="搜索" title="搜索Waveshare Wiki[f]" accesskey="f" id="searchInput" class="search-query form-control"/><input type="submit" name="go" value="前往" title="若相同标题存在，则直接前往该页面" id="mw-searchButton" class="searchButton btn hidden"/>
+					</div>
+				</form><ul class="nav navbar-nav navbar-right"><li class="nav"><a href="https://docs.waveshare.net" id="n-https.253A.252F.252Fdocs.waveshare.net" rel="nofollow" target="_blank">微雪文档</a></li>							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- /navbar -->
+					<div id="mw-page-base"></div>
+			<div id="mw-head-base"></div>
+			<a id="top"></a>
+
+			<!-- content -->
+			<div id="contentwrapper" class="user-loggedout not-editable container with-navbar with-navbar-fixed">
+
+				
+				<div class="row">
+					<div class="col-md-offset-2 col-md-10" role="main">
+								<div class="mw-body" id="content">
+			<div id="mw-js-message" style="display:none;"></div>
+									<h1 id="firstHeading" class="firstHeading page-header" lang="zh-Hans-CN"><span dir="auto">RP2350B-Plus-W</span></h1>
+									<!-- bodyContent -->
+			<div id="bodyContent">
+								<div id="siteSub">来自Waveshare Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="#mw-navigation">导航</a>、					<a href="#p-search">搜索</a>
+				</div>
+				<div id="mw-content-text" lang="zh-Hans-CN" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="wiki-pages pink-color">
+<div class="tabberlive newwsnav" id="wsnavbar">
+<ul class="tabbernav">
+<li class="nav-link"><a href="#myintro">说明</a></li>
+<li class="nav-link"><a href="#myresources">资料</a></li>
+<li class="nav-link"><a href="#myfaq">FAQ</a></li>
+<li class="nav-link"><a href="#mysupport">售后</a></li>
+</ul>
+</div>
+<div class="tabber">
+<div class="tabbertab" title="说明" id="myintro">
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="zh-Hans-CN" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E8.AF.B4.E6.98.8E"><span class="tocnumber">1</span> <span class="toctext">说明</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.E4.BA.A7.E5.93.81.E6.A6.82.E8.BF.B0"><span class="tocnumber">1.1</span> <span class="toctext">产品概述</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.E4.BA.A7.E5.93.81.E7.89.B9.E6.80.A7"><span class="tocnumber">1.2</span> <span class="toctext">产品特性</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.E5.BC.95.E8.84.9A.E5.88.86.E5.B8.83"><span class="tocnumber">1.3</span> <span class="toctext">引脚分布</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.E5.B0.BA.E5.AF.B8.E5.9B.BE"><span class="tocnumber">1.4</span> <span class="toctext">尺寸图</span></a></li>
+<li class="toclevel-2"><a href="#Pico.E5.BF.AB.E9.80.9F.E4.B8.8A.E6.89.8B"><span class="tocnumber">1.5</span> <span class="toctext">Pico快速上手</span></a>
+<ul>
+<li class="toclevel-3"><a href="#.E5.9B.BA.E4.BB.B6.E4.B8.8B.E8.BD.BD"><span class="tocnumber">1.5.1</span> <span class="toctext">固件下载</span></a></li>
+<li class="toclevel-3"><a href="#.E5.9F.BA.E7.A1.80.E4.BB.8B.E7.BB.8D"><span class="tocnumber">1.5.2</span> <span class="toctext">基础介绍</span></a></li>
+<li class="toclevel-3"><a href="#MicroPython.E7.B3.BB.E5.88.97"><span class="tocnumber">1.5.3</span> <span class="toctext">MicroPython系列</span></a>
+<ul>
+<li class="toclevel-4"><a href="#.E5.AE.89.E8.A3.85Thonny_IDE"><span class="tocnumber">1.5.3.1</span> <span class="toctext">安装Thonny IDE</span></a></li>
+<li class="toclevel-4"><a href="#.E7.83.A7.E5.BD.95.E5.9B.BA.E4.BB.B6"><span class="tocnumber">1.5.3.2</span> <span class="toctext">烧录固件</span></a></li>
+<li class="toclevel-4"><a href="#.E8.AE.B2.E8.A7.A3.E8.A7.86.E9.A2.91"><span class="tocnumber">1.5.3.3</span> <span class="toctext">讲解视频</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#C.2FC.2B.2B.E7.B3.BB.E5.88.97"><span class="tocnumber">1.5.4</span> <span class="toctext">C/C++系列</span></a>
+<ul>
+<li class="toclevel-4"><a href="#.E5.AE.89.E8.A3.85VSCode"><span class="tocnumber">1.5.4.1</span> <span class="toctext">安装VSCode</span></a></li>
+<li class="toclevel-4"><a href="#.E5.AE.89.E8.A3.85.E6.89.A9.E5.B1.95"><span class="tocnumber">1.5.4.2</span> <span class="toctext">安装扩展</span></a></li>
+<li class="toclevel-4"><a href="#.E9.85.8D.E7.BD.AE.E6.89.A9.E5.B1.95"><span class="tocnumber">1.5.4.3</span> <span class="toctext">配置扩展</span></a></li>
+<li class="toclevel-4"><a href="#.E6.96.B0.E5.BB.BA.E5.B7.A5.E7.A8.8B"><span class="tocnumber">1.5.4.4</span> <span class="toctext">新建工程</span></a></li>
+<li class="toclevel-4"><a href="#.E7.BC.96.E8.AF.91.E5.B7.A5.E7.A8.8B"><span class="tocnumber">1.5.4.5</span> <span class="toctext">编译工程</span></a></li>
+<li class="toclevel-4"><a href="#.E7.83.A7.E5.BD.95.E5.9B.BA.E4.BB.B6_2"><span class="tocnumber">1.5.4.6</span> <span class="toctext">烧录固件</span></a></li>
+<li class="toclevel-4"><a href="#.E5.AF.BC.E5.85.A5.E5.B7.A5.E7.A8.8B"><span class="tocnumber">1.5.4.7</span> <span class="toctext">导入工程</span></a></li>
+<li class="toclevel-4"><a href="#.E6.9B.B4.E6.96.B0.E6.89.A9.E5.B1.95"><span class="tocnumber">1.5.4.8</span> <span class="toctext">更新扩展</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Arduino_IDE_.E7.B3.BB.E5.88.97"><span class="tocnumber">1.5.5</span> <span class="toctext">Arduino IDE 系列</span></a>
+<ul>
+<li class="toclevel-4"><a href="#.E5.AE.89.E8.A3.85Arduino_IDE"><span class="tocnumber">1.5.5.1</span> <span class="toctext">安装Arduino IDE</span></a></li>
+<li class="toclevel-4"><a href="#Arduino_IDE.E4.B8.AD.E6.96.87.E7.95.8C.E9.9D.A2"><span class="tocnumber">1.5.5.2</span> <span class="toctext">Arduino IDE中文界面</span></a></li>
+<li class="toclevel-4"><a href="#.E5.9C.A8_Arduino_IDE_.E4.B8.AD.E5.AE.89.E8.A3.85_Arduino-Pico_Core"><span class="tocnumber">1.5.5.3</span> <span class="toctext">在 Arduino IDE 中安装 Arduino-Pico Core</span></a>
+<ul>
+<li class="toclevel-5"><a href="#.E5.9B.BD.E5.86.85.E7.94.A8.E6.88.B7"><span class="tocnumber">1.5.5.3.1</span> <span class="toctext">国内用户</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4"><a href="#.E7.AC.AC.E4.B8.80.E6.AC.A1.E4.B8.8A.E4.BC.A0.E7.A8.8B.E5.BA.8F"><span class="tocnumber">1.5.5.4</span> <span class="toctext">第一次上传程序</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#.E5.BC.80.E6.BA.90.E4.BE.8B.E7.A8.8B"><span class="tocnumber">1.5.6</span> <span class="toctext">开源例程</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.E8.B5.84.E6.96.99"><span class="tocnumber">2</span> <span class="toctext">资料</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.E9.85.8D.E5.A5.97.E8.B5.84.E6.96.99"><span class="tocnumber">2.1</span> <span class="toctext">配套资料</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#.E7.A4.BA.E4.BE.8B.E7.A8.8B.E5.BA.8F"><span class="tocnumber">2.1.1</span> <span class="toctext">示例程序</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#.E5.8E.9F.E7.90.86.E5.9B.BE"><span class="tocnumber">2.1.2</span> <span class="toctext">原理图</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#.E5.AE.98.E6.96.B9.E8.B5.84.E6.96.99"><span class="tocnumber">2.2</span> <span class="toctext">官方资料</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#.E6.A0.91.E8.8E.93.E6.B4.BE.E5.AE.98.E6.96.B9.E6.96.87.E6.A1.A3"><span class="tocnumber">2.2.1</span> <span class="toctext">树莓派官方文档</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#.E6.A0.91.E8.8E.93.E6.B4.BE.E5.BC.80.E6.BA.90.E4.BE.8B.E7.A8.8B"><span class="tocnumber">2.2.2</span> <span class="toctext">树莓派开源例程</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#.E5.BC.80.E5.8F.91.E8.BD.AF.E4.BB.B6"><span class="tocnumber">2.3</span> <span class="toctext">开发软件</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#FAQ"><span class="tocnumber">3</span> <span class="toctext">FAQ</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.E6.8A.80.E6.9C.AF.E6.94.AF.E6.8C.81"><span class="tocnumber">4</span> <span class="toctext">技术支持</span></a></li>
+</ul>
+</div>
+
+<h1><span id="说明"></span><span class="mw-headline" id=".E8.AF.B4.E6.98.8E">说明</span></h1>
+<div class="tabber">
+<table id="infotable" class="a-r at-c roundy bgd-raspberry-pink bl-raspberry-pink" style="margin-left: 5px; margin-bottom: 5px;">
+
+<tbody><tr>
+<td colspan="2">
+<table class="at-c roundy" style="background: transparent;width:100%;">
+
+<tbody><tr>
+<td class="at-c textwhite" style="display: none;"><span style="font-size:1.5em; line-height: 36px;"><b>RP2350B-Plus-W</b></span>
+</td></tr>
+<tr>
+<td class="at-c bgwhite" style="margin:5px;"><div class="subnavber">
+<div class="subnavbertab" title="RP2350B-Plus-W">
+<p><a href="https://www.waveshare.net/shop/RP2350B-Plus-W.htm" title="RP2350B-Plus-W" target="_blank" rel="nofollow noreferrer noopener"><img alt="RP2350B-Plus-W" src="/w/upload/2/26/RP2350B-Plus-W-1.jpg" decoding="async" loading="lazy" width="1400" height="900" /></a>
+</p>
+</div>
+</div>
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td colspan="2">
+<table class="roundy" style="background: transparent;width:100%;">
+
+<tbody><tr>
+<td class="at-c textwhite"><b>{{{name2}}}</b>
+</td></tr>
+<tr>
+<td class="at-c bgwhite" style="margin:5px;">
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="roundy" style="background: transparent;width:100%;">
+
+<tbody><tr>
+<td class="at-c textwhite"><b>{{{name3}}}</b>
+</td></tr>
+<tr>
+<td class="at-c bgwhite" style="margin:5px;">
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td colspan="2">
+<table class="roundy" style="background: transparent; border-collapse:collapse;width:100%;display: none;">
+<tbody><tr>
+<td style="width:2%;">
+</td>
+<td style="width:3%;">
+</td>
+<th colspan="2" width="90%" class="alignt-center roundytop bgl-white">基本信息
+</th>
+<td style="width:3%;">
+</td>
+<td style="width:2%;">
+</td></tr>
+<tr>
+<th colspan="3" width="90px" class="alignt-right roundytl bgwhite b-raspberry-pink" style="border-width: 0 0 1px 0;">分类：
+</th>
+<td colspan="3" class="at-l roundytr b-raspberry-pink bgwhite" style="border-width: 0 0 1px 0;">树莓派开发板模块
+</td></tr>
+<tr style="display:none;">
+<th colspan="3" width="90px" class="alignt-right bgwhite b-raspberry-pink" style="border-width: 0 0 1px 0;">{{{userDefinedInfo1}}}：
+</th>
+<td colspan="3" class="at-l b-raspberry-pink bgwhite" style="border-width: 0 0 1px 0;">{{{userdefinedvalue1}}}
+</td></tr>
+<tr style="display:none;">
+<th colspan="3" width="90px" class="alignt-right bgwhite b-raspberry-pink" style="border-width: 0 0 1px 0;">{{{userDefinedInfo2}}}：
+</th>
+<td colspan="3" class="at-l b-raspberry-pink bgwhite" style="border-width: 0 0 1px 0;">{{{userdefinedvalue2}}}
+</td></tr>
+<tr style="display:none;">
+<th colspan="3" width="90px" class="alignt-right bgwhite b-raspberry-pink" style="border-width: 0 0 1px 0;">{{{userDefinedInfo3}}}：
+</th>
+<td colspan="3" class="at-l b-raspberry-pink bgwhite" style="border-width: 0 0 1px 0;">{{{userdefinedvalue3}}}
+</td></tr>
+<tr>
+<th colspan="3" width="90px" class="alignt-right roundybl bgwhite">品牌：
+</th>
+<td colspan="3" class="at-l roundybr bgwhite">Waveshare
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td colspan="2">
+<table class="align-right roundy" style="background: transparent; border-collapse:collapse;width:100%;">
+<tbody><tr>
+<td style="width:2%;">
+</td>
+<td style="width:3%;">
+</td>
+<th colspan="2" width="90%" class="alignt-center roundytop"><font color="white">功能简介</font>
+</th>
+<td style="width:3%;">
+</td>
+<td style="width:2%;">
+</td></tr>
+<tr>
+<td colspan="6" class="at-c">
+<table class="roundy bd-未知 bgl-未知 textblack bw-1 fulltable">
+
+<tbody><tr>
+<td>
+<table class="roundy bgwhite fulltable" style="text-align:center">
+
+<tbody><tr style="display:none;">
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small><b>特性</b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" colspan="3" style="width:75%;padding-bottom: 5px;color: #666;"><small>无特性，不解释</small>
+</td></tr>
+<tr>
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small><b>主控</b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" colspan="3" style="width:75%;padding-bottom: 5px;color: #666;"><small>RP2350</small>
+</td></tr>
+<tr style="display:none;">
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small>'<b><i></i></b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" colspan="3" style="width:75%;padding-bottom: 5px;color: #666;"><small>无特性，不解释</small>
+</td></tr>
+<tr style="display:none;">
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small>'<b><i></i></b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" colspan="3" style="width:75%;padding-bottom: 5px;color: #666;"><small>无特性，不解释</small>
+</td></tr>
+<tr style="display:none;">
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small>'<b><i></i></b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" colspan="3" style="width:75%;padding-bottom: 5px;color: #666;"><small>无特性，不解释</small>
+</td></tr>
+<tr>
+<td class="roundyleft textwhite bgd-raspberry-pink bl-raspberry-pink bw-1" style="width:25%;opacity: 0.8;padding-bottom: 5px;"><small><b>接口</b></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" style="width:25%;padding-bottom: 5px;color: #666;"><small><a href="/wiki/%E5%88%86%E7%B1%BB:SPI%E6%8E%A5%E5%8F%A3" title="分类:SPI接口">SPI</a></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" style="width:25%;padding-bottom: 5px;color: #666;"><small><a href="/wiki/%E5%88%86%E7%B1%BB:I2C%E6%8E%A5%E5%8F%A3" title="分类:I2C接口">I2C</a></small>
+</td>
+<td class="roundyright bl-raspberry-pink bw-1" style="width:25%;padding-bottom: 5px;color: #666;"><small><a href="/wiki/%E5%88%86%E7%B1%BB:UART%E6%8E%A5%E5%8F%A3" title="分类:UART接口">UART</a></small>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td colspan="2">
+<table class="align-right roundy" style="background: transparent; border-collapse:collapse;width:100%;display:none;">
+<tbody><tr>
+<td style="width:2%;">
+</td>
+<td style="width:3%;">
+</td>
+<th colspan="2" width="90%" class="alignt-center roundytop bgl-white">相关产品
+</th>
+<td style="width:3%;">
+</td>
+<td style="width:2%;">
+</td></tr>
+<tr>
+<td colspan="6" class="at-c">
+<table class="roundy bw-1 fulltable table table-striped table-bordered mw-collapsed align-left">
+
+<tbody><tr>
+<th>
+</th></tr>
+<tr style="display:none;">
+<th>♦   {{{Product1}}}
+</th></tr>
+<tr style="display:none;">
+<th>♦   {{{Product2}}}
+</th></tr>
+<tr style="display:none;">
+<th>♦   {{{Product3}}}
+</th></tr>
+<tr style="display:none;">
+<th>♦   {{{Product4}}}
+</th></tr>
+<tr style="display:none;">
+<th>♦   {{{Product5}}}
+</th></tr>
+<tr style="display:none;">
+<td>—— <span style="font-size:14px;text-align: left;font-weight: bold;">类目1</span> ——
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px;text-align: left;color: #0645ad;font-weight: bold;">♦   主板/套件</span>
+</td></tr>
+<tr style="font-size:13px; text-align: left;">
+<td>
+<ul><li><a href="/wiki/Raspberry_Pi_Pico" title="Raspberry Pi Pico">Raspberry Pi Pico</a><br /></li>
+<li><a href="/wiki/Raspberry-Pi-Pico-Basic-Kit" class="mw-redirect" title="Raspberry-Pi-Pico-Basic-Kit">Raspberry-Pi-Pico-Basic-Kit</a><br /></li>
+<li><a href="/wiki/Raspberry-Pi-Pico-Sensor-Kit" title="Raspberry-Pi-Pico-Sensor-Kit">Raspberry-Pi-Pico-Sensor-Kit</a><br /></li>
+<li><a href="/wiki/Raspberry-Pi-Pico-Kit-B" title="Raspberry-Pi-Pico-Kit-B">Raspberry-Pi-Pico-Kit-B</a><br /></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr style="display:none;">
+<td><span style="font-size:14px;text-align: left;color: #0645ad;font-weight: bold;">♦   类目2</span>
+</td></tr>
+<tr style="font-size:13px; text-align: left;">
+<td>
+<p>列表2
+</p>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px;text-align: left;color: #0645ad;font-weight: bold;">♦   扩展模块</span>
+</td></tr>
+<tr style="font-size:13px; text-align: left;">
+<td>
+<ul><li><a href="/wiki/Pico-Servo-Driver" title="Pico-Servo-Driver">Pico-Servo-Driver</a><br /></li>
+<li><a href="/wiki/Pico-10DOF-IMU" title="Pico-10DOF-IMU">Pico-10DOF-IMU</a><br /></li>
+<li><a href="/wiki/Pico-RTC-DS3231" title="Pico-RTC-DS3231">Pico-RTC-DS3231</a><br /></li>
+<li><a href="/wiki/Pico-UPS-A" title="Pico-UPS-A">Pico-UPS-A</a><br /></li>
+<li><a href="/wiki/Pico-UPS-B" title="Pico-UPS-B">Pico-UPS-B</a><br /></li>
+<li><a href="/wiki/Pico-2CH-RS232" title="Pico-2CH-RS232">Pico-2CH-RS232</a><br /></li>
+<li><a href="/wiki/Pico-GPS-L76B" title="Pico-GPS-L76B">Pico-GPS-L76B</a><br /></li>
+<li><a href="/wiki/Pico-SIM7020C-NB-IoT" title="Pico-SIM7020C-NB-IoT">Pico-SIM7020C-NB-IoT</a><br /></li>
+<li><a href="/wiki/Pico-SIM7080G-Cat-M/NB-IoT" title="Pico-SIM7080G-Cat-M/NB-IoT">Pico-SIM7080G-Cat-M/NB-IoT</a><br /></li>
+<li><a href="/wiki/Pico-SIM868-GSM/GPRS/GNSS" title="Pico-SIM868-GSM/GPRS/GNSS">Pico-SIM868-GSM/GPRS/GNSS</a><br /></li>
+<li><a href="/wiki/Pico-LoRa-SX1262-868M" title="Pico-LoRa-SX1262-868M">Pico-LoRa-SX1262-868M</a><br /></li></ul>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr style="display:none;">
+<td><span style="font-size:14px;text-align: left;color: #0645ad;font-weight: bold;">♦   类目4</span>
+</td></tr>
+<tr style="font-size:13px; text-align: left;">
+<td>
+<p>列表4
+</p>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr style="display:none;">
+<td><span style="font-size:14px;text-align: left;color: #0645ad;font-weight: bold;">♦   类目5</span>
+</td></tr>
+<tr style="font-size:13px; text-align: left;">
+<td>
+<p>列表5
+</p>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<h2><span id="产品概述"></span><span class="mw-headline" id=".E4.BA.A7.E5.93.81.E6.A6.82.E8.BF.B0">产品概述</span></h2>
+<p>RP2350B-Plus-W 是微雪(Waveshare)设计的低成本，高性能的微控制器开发板。在较小的板型下，使用 RP2350B 作为主控，配备了 Raspberry Pi Radio Module 2 模块，集成 16MB 的片上 Flash 并预留 PSRAM 接口，便于开发和集成到产品中。
+</p>
+<h2><span id="产品特性"></span><span class="mw-headline" id=".E4.BA.A7.E5.93.81.E7.89.B9.E6.80.A7">产品特性</span></h2>
+<ul><li>采用 Raspberry Pi 设计的 RP2350B 微控制器芯片</li>
+<li>独特的双核、双架构，搭载了双核 ARM Cortex-M33 处理器和双核 Hazard3 RISC-V 处理器，时钟运行频率均高达 150MHz，支持用户在两种架构间灵活切换</li>
+<li>配备了 Raspberry Pi Radio Module 2 模块，支持 Wi-Fi 4 无线网络和 Bluetooth 5.2</li>
+<li>内置 520KB 的 SRAM 和 16MB 的片上 Flash，预留 PSRAM 接口</li>
+<li>采用 Type-C 接口，无需纠结正反插</li>
+<li>USB1.1 主机和从设备支持</li>
+<li>支持低功耗睡眠和休眠模式</li>
+<li>可通过 USB 识别为大容量存储器进行拖放式下载程序</li>
+<li>引出 41 个多功能的 GPIO 引脚</li>
+<li>1 个 HSTX，2 个 SPI，2 个 I2C，2 个 UART，6 个 12 位 ADC，以及 22 个可控 PWM 通道</li>
+<li>精确的片上时钟和定时器</li>
+<li>温度传感器</li>
+<li>片上加速浮点库</li>
+<li>12 个可编程 I/O (PIO) 状态机，用于自定义外设支持</li></ul>
+<h2><span id="引脚分布"></span><span class="mw-headline" id=".E5.BC.95.E8.84.9A.E5.88.86.E5.B8.83">引脚分布</span></h2>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:RP2350B-Plus-W-details-inter.jpg" class="image"><img alt="RP2350B-Plus-W-details-inter.jpg" src="/w/upload/thumb/0/07/RP2350B-Plus-W-details-inter.jpg/680px-RP2350B-Plus-W-details-inter.jpg" decoding="async" loading="lazy" width="680" height="454" srcset="/w/upload/0/07/RP2350B-Plus-W-details-inter.jpg 1.5x" /></a><br />
+<a href="/wiki/%E6%96%87%E4%BB%B6:RP2350B-Plus-W-details-inter-1.jpg" class="image"><img alt="RP2350B-Plus-W-details-inter-1.jpg" src="/w/upload/thumb/d/d4/RP2350B-Plus-W-details-inter-1.jpg/680px-RP2350B-Plus-W-details-inter-1.jpg" decoding="async" loading="lazy" width="680" height="565" srcset="/w/upload/d/d4/RP2350B-Plus-W-details-inter-1.jpg 1.5x" /></a><br />
+</p>
+<h2><span id="尺寸图"></span><span class="mw-headline" id=".E5.B0.BA.E5.AF.B8.E5.9B.BE">尺寸图</span></h2>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:RP2350B-Plus-W-details-size.jpg" class="image"><img alt="RP2350B-Plus-W-details-size.jpg" src="/w/upload/thumb/9/90/RP2350B-Plus-W-details-size.jpg/800px-RP2350B-Plus-W-details-size.jpg" decoding="async" loading="lazy" width="800" height="640" srcset="/w/upload/9/90/RP2350B-Plus-W-details-size.jpg 1.5x" /></a><br />
+</p>
+</div>
+<div class="tabbertab" title="快速上手">
+<div class="wiki-pages pink-color">
+<h2><span id="Pico快速上手"></span><span class="mw-headline" id="Pico.E5.BF.AB.E9.80.9F.E4.B8.8A.E6.89.8B">Pico快速上手</span></h2>
+<h3><span id="固件下载"></span><span class="mw-headline" id=".E5.9B.BA.E4.BB.B6.E4.B8.8B.E8.BD.BD">固件下载</span></h3>
+<table>
+
+<tbody><tr>
+<td>
+<table class="mw-collapsible align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px"><b>MicroPython固件下载</b></span>
+</td></tr>
+<tr style="font-size:14px">
+<td><a href="/wiki/%E6%96%87%E4%BB%B6:Pico_MicroPython.gif" class="image"><img alt="Pico MicroPython.gif" src="/w/upload/d/d1/Pico_MicroPython.gif" decoding="async" loading="lazy" width="535" height="638" /></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px"><b>C_Blink固件下载</b></span>
+</td></tr>
+<tr style="font-size:14px">
+<td><a href="/wiki/%E6%96%87%E4%BB%B6:Pico_Blink.gif" class="image"><img alt="Pico Blink.gif" src="/w/upload/c/cd/Pico_Blink.gif" decoding="async" loading="lazy" width="535" height="502" /></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名3</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表3
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名4</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表4
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名5</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表5
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名6</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表6
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名7</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表7
+</td></tr></tbody></table>
+</td></tr>
+<tr style="display:none;">
+<td>
+<table class="mw-collapsible mw-collapsed align-left">
+
+<tbody><tr>
+<td><span style="font-size:14px">教程名8</span>
+</td></tr>
+<tr style="font-size:14px">
+<td>列表8
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<h3><span id="基础介绍"></span><span class="mw-headline" id=".E5.9F.BA.E7.A1.80.E4.BB.8B.E7.BB.8D">基础介绍</span></h3>
+<p><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/04/27/getting-started-with-raspberry-pi-pico-basic-intro.html">Raspberry Pi Pico的基础介绍</a><br />
+</p>
+<h3><span id="MicroPython系列"></span><span class="mw-headline" id="MicroPython.E7.B3.BB.E5.88.97">MicroPython系列</span></h3>
+<h4><span id="安装Thonny_IDE"></span><span class="mw-headline" id=".E5.AE.89.E8.A3.85Thonny_IDE">安装Thonny IDE</span></h4>
+<p>为了方便在电脑上使用 MicroPython 开发 Pico/Pico2 板，建议下载 Thonny IDE
+</p>
+<ul><li>下载 Thonny IDE 并按照步骤安装，安装包均为 Windows 版本，其他版本请参考 Thonny 官网
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/thonny/thonny/releases/download/v3.3.3/thonny-3.3.3.exe">Thonny IDE 官方下载链接</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/7/73/Thonny-3.3.3.zip">Thonny IDE 下载链接</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://thonny.org/">Thonny 官网</a></li></ul></li>
+<li>安装完成之后，第一次要配置语言和主板环境，由于我们是为了使用 Pico/Pico2，所以注意主板环境选择 Raspberry Pi 选项<br /></li></ul>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-R3-Tonny1.png" class="image"><img alt="Pico-R3-Tonny1.png" src="/w/upload/thumb/e/e4/Pico-R3-Tonny1.png/700px-Pico-R3-Tonny1.png" decoding="async" loading="lazy" width="700" height="573" srcset="/w/upload/thumb/e/e4/Pico-R3-Tonny1.png/1050px-Pico-R3-Tonny1.png 1.5x, /w/upload/thumb/e/e4/Pico-R3-Tonny1.png/1400px-Pico-R3-Tonny1.png 2x" /></a><br />
+</p>
+<ul><li>配置 Micrpython 环境及选择 Pico/Pico2 端口<br />
+<ul><li>先将 Pico/Pico2 接入电脑，左键点击 Thonny 右下角的配置环境选项--》选择 configture interpreter</li>
+<li>在弹出的窗口栏中选择 MicroPython(Raspberry Pi Pico),同时选择对应的端口</li></ul></li></ul>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:Raspberry-Pi-Pico-Basic-Kit-M-2.png" class="image"><img alt="Raspberry-Pi-Pico-Basic-Kit-M-2.png" src="/w/upload/thumb/4/47/Raspberry-Pi-Pico-Basic-Kit-M-2.png/700px-Raspberry-Pi-Pico-Basic-Kit-M-2.png" decoding="async" loading="lazy" width="700" height="575" srcset="/w/upload/thumb/4/47/Raspberry-Pi-Pico-Basic-Kit-M-2.png/1050px-Raspberry-Pi-Pico-Basic-Kit-M-2.png 1.5x, /w/upload/thumb/4/47/Raspberry-Pi-Pico-Basic-Kit-M-2.png/1400px-Raspberry-Pi-Pico-Basic-Kit-M-2.png 2x" /></a><br />
+<a href="/wiki/%E6%96%87%E4%BB%B6:Raspberry-Pi-Pico-Basic-Kit-M-3.png" class="image"><img alt="Raspberry-Pi-Pico-Basic-Kit-M-3.png" src="/w/upload/thumb/d/db/Raspberry-Pi-Pico-Basic-Kit-M-3.png/700px-Raspberry-Pi-Pico-Basic-Kit-M-3.png" decoding="async" loading="lazy" width="700" height="600" srcset="/w/upload/d/db/Raspberry-Pi-Pico-Basic-Kit-M-3.png 1.5x" /></a><br />
+</p>
+<h4><span id="烧录固件"></span><span class="mw-headline" id=".E7.83.A7.E5.BD.95.E5.9B.BA.E4.BB.B6">烧录固件</span></h4>
+<ul><li>点击 ok 后返回到 Thonny 主界面，下载对应的固件库并烧录到设备中，然后点击停止按钮，在 Shell 窗口中即可显示当前使用到的环境</li>
+<li><font style="color:red;"><b>注意：Pico 系列版型可直接使用 Micropython 官方提供的固件，RP 系列版型请使用下方或程序包中的固件</b></font>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://micropython.org/download/?vendor=Raspberry%20Pi">Pico / Pico2 官方固件库</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/0/0f/WAVESHARE-RP2040-Board.zip">RP2040 固件库</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/8/85/WAVESHARE-RP2350A-Board.zip">RP2350A 固件库</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/8/8b/WAVESHARE-RP2350B-Board.zip">RP2350B 固件库</a></li></ul></li>
+<li>最新版本固件编译步骤
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://github.com/micropython/micropython/tree/master/ports/rp2">https://github.com/micropython/micropython/tree/master/ports/rp2</a></li></ul></li>
+<li>Pico/Pico2 在 Windows 下载固件库方法: 按住 BOOT 键后连接电脑后，松开 BOOT 键，电脑会出现一个可移动磁盘，将固件库复制进去即可</li>
+<li>RP2040/RP2350 在 Windows 下载固件库方法: 连接电脑后，同时按下 BOOT 键跟 RESET 键,先松开 RESET 键再松开 BOOT 键，电脑会出现一个可移动磁盘，将固件库复制进去即可（用 Pico/Pico2 的方式也可以）<br /></li></ul>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:Raspberry-Pi-Pico2-Python.png" class="image"><img alt="Raspberry-Pi-Pico2-Python.png" src="/w/upload/thumb/9/9c/Raspberry-Pi-Pico2-Python.png/700px-Raspberry-Pi-Pico2-Python.png" decoding="async" loading="lazy" width="700" height="593" srcset="/w/upload/thumb/9/9c/Raspberry-Pi-Pico2-Python.png/1050px-Raspberry-Pi-Pico2-Python.png 1.5x, /w/upload/thumb/9/9c/Raspberry-Pi-Pico2-Python.png/1400px-Raspberry-Pi-Pico2-Python.png 2x" /></a>
+</p>
+<h4><span id="讲解视频"></span><span class="mw-headline" id=".E8.AE.B2.E8.A7.A3.E8.A7.86.E9.A2.91">讲解视频</span></h4>
+<p><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/04/06/getting-started-with-raspberry-pi-pico-gpio.html">【MicroPython】machine.Pin类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/04/06/getting-started-with-raspberry-pi-pico-pwm.html">【MicroPython】machine.PWM类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/04/06/getting-started-with-raspberry-pi-pico-adc.html">【MicroPython】machine.ADC类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/05/28/getting-started-with-raspberry-pi-pico-uart.html">【MicroPython】machine.UART类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/06/08/getting-started-with-raspberry-pi-pico-i2c.html">【MicroPython】machine.I2C类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/06/09/getting-started-with-raspberry-pi-pico-spi.html">【MicroPython】machine.SPI类函数详解</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pico.wiki/index.php/2021/07/19/getting-started-with-raspberry-pi-pico-pio.html">【MicroPython】rp2.StateMachine类函数详解</a><br />
+</p>
+<h3><span id="C/C++系列"></span><span class="mw-headline" id="C.2FC.2B.2B.E7.B3.BB.E5.88.97">C/C++系列</span></h3>
+<p>对于 C/C++，建议使用 Pico VSCode 进行开发，这是一款 Microsoft Visual Studio Code 扩展，旨在让您在为 Raspberry Pi Pico 系列开发板创建、开发和调试项目时更加轻松。无论您是初学者还是经验丰富的专业人士，此工具都可以帮助您自信而轻松地进行 Pico 开发。下面我们介绍如何安装该扩展并使用。
+</p>
+<ul><li>官网教程：<a target="_blank" rel="nofollow noreferrer noopener" class="external free" href="https://www.raspberrypi.com/news/pico-vscode-extension/">https://www.raspberrypi.com/news/pico-vscode-extension/</a></li>
+<li>本教程适用于树莓派Pico、Pico2与本公司开发的RP2040、RP2350系列开发板</li>
+<li>开发环境默认以 Windows11 为例，其他环境请参考官网教程进行安装</li></ul>
+<h4><span id="安装VSCode"></span><span class="mw-headline" id=".E5.AE.89.E8.A3.85VSCode">安装VSCode</span></h4>
+<ol>
+<li>
+首先，点击下载 <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pan.baidu.com/s/1UOjLA5Mw-wk9_5YyACxHnw?pwd=wxdz">pico-vscode 程序包</a>，解压并打开程序包，双击安装 VSCode<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-1.JPG" class="image"><img alt="Pico-vscode-1.JPG" src="/w/upload/thumb/7/76/Pico-vscode-1.JPG/600px-Pico-vscode-1.JPG" decoding="async" loading="lazy" width="600" height="450" srcset="/w/upload/7/76/Pico-vscode-1.JPG 1.5x" /></a><br /><font style="color:red;"><b>注意：如果已安装 vscode 注意检查版本是否为 v1.87.0 或更高版本</b></font><br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-2.JPG" class="image"><img alt="Pico-vscode-2.JPG" src="/w/upload/thumb/e/e3/Pico-vscode-2.JPG/600px-Pico-vscode-2.JPG" decoding="async" loading="lazy" width="600" height="451" srcset="/w/upload/e/e3/Pico-vscode-2.JPG 1.5x" /></a><br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-3.JPG" class="image"><img alt="Pico-vscode-3.JPG" src="/w/upload/thumb/6/66/Pico-vscode-3.JPG/300px-Pico-vscode-3.JPG" decoding="async" loading="lazy" width="300" height="234" srcset="/w/upload/6/66/Pico-vscode-3.JPG 1.5x" /></a>
+</li>
+</ol>
+<h4><span id="安装扩展"></span><span class="mw-headline" id=".E5.AE.89.E8.A3.85.E6.89.A9.E5.B1.95">安装扩展</span></h4>
+<ol>
+<li>
+点击扩展，选择从 VSIX 安装<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-4.JPG" class="image"><img alt="Pico-vscode-4.JPG" src="/w/upload/d/dc/Pico-vscode-4.JPG" decoding="async" loading="lazy" width="600" height="328" /></a><br />
+</li>
+<li>
+选择 vsix 后缀的软件包，点击安装<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-5.JPG" class="image"><img alt="Pico-vscode-5.JPG" src="/w/upload/f/f2/Pico-vscode-5.JPG" decoding="async" loading="lazy" width="600" height="459" /></a><br />
+</li>
+<li>
+随后 vscode 会自动安装 raspberry-pi-pico 及其依赖扩展，可以点击刷新查看安装进度<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-6.JPG" class="image"><img alt="Pico-vscode-6.JPG" src="/w/upload/a/ab/Pico-vscode-6.JPG" decoding="async" loading="lazy" width="400" height="629" /></a><br />
+</li>
+<li>
+右下角显示完成安装，关闭 vscode<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-7.JPG" class="image"><img alt="Pico-vscode-7.JPG" src="/w/upload/thumb/a/a2/Pico-vscode-7.JPG/600px-Pico-vscode-7.JPG" decoding="async" loading="lazy" width="600" height="310" srcset="/w/upload/thumb/a/a2/Pico-vscode-7.JPG/900px-Pico-vscode-7.JPG 1.5x, /w/upload/thumb/a/a2/Pico-vscode-7.JPG/1200px-Pico-vscode-7.JPG 2x" /></a>
+</li>
+</ol>
+<h4><span id="配置扩展"></span><span class="mw-headline" id=".E9.85.8D.E7.BD.AE.E6.89.A9.E5.B1.95">配置扩展</span></h4>
+<ol>
+<li>
+打开目录 C:\Users\用户名，将整个 .pico-sdk 拷贝至该目录<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-8.JPG" class="image"><img alt="Pico-vscode-8.JPG" src="/w/upload/thumb/d/d4/Pico-vscode-8.JPG/600px-Pico-vscode-8.JPG" decoding="async" loading="lazy" width="600" height="256" srcset="/w/upload/thumb/d/d4/Pico-vscode-8.JPG/900px-Pico-vscode-8.JPG 1.5x, /w/upload/thumb/d/d4/Pico-vscode-8.JPG/1200px-Pico-vscode-8.JPG 2x" /></a><br />
+</li>
+<li>
+拷贝完成<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-9.JPG" class="image"><img alt="Pico-vscode-9.JPG" src="/w/upload/thumb/a/a2/Pico-vscode-9.JPG/600px-Pico-vscode-9.JPG" decoding="async" loading="lazy" width="600" height="497" srcset="/w/upload/a/a2/Pico-vscode-9.JPG 1.5x" /></a><br />
+</li>
+<li>
+打开 vscode，对 Raspberry Pi Pico 扩展中各个路径进行配置<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-10.JPG" class="image"><img alt="Pico-vscode-10.JPG" src="/w/upload/thumb/6/6e/Pico-vscode-10.JPG/600px-Pico-vscode-10.JPG" decoding="async" loading="lazy" width="600" height="319" srcset="/w/upload/thumb/6/6e/Pico-vscode-10.JPG/900px-Pico-vscode-10.JPG 1.5x, /w/upload/thumb/6/6e/Pico-vscode-10.JPG/1200px-Pico-vscode-10.JPG 2x" /></a><br />
+配置如下：
+<pre>Cmake Path：
+${HOME}/.pico-sdk/cmake/v3.28.6/bin/cmake.exe
+
+Git Path:
+${HOME}/.pico-sdk/git/cmd/git.exe    
+
+Ninja Path:
+${HOME}/.pico-sdk/ninja/v1.12.1/ninja.exe
+
+Python3 Path:
+${HOME}/.pico-sdk/python/3.12.1/python.exe             
+</pre>
+</li>
+</ol>
+<h4><span id="新建工程"></span><span class="mw-headline" id=".E6.96.B0.E5.BB.BA.E5.B7.A5.E7.A8.8B">新建工程</span></h4>
+<ol>
+<li>
+配置完成，测试新建工程，输入工程名、选择路径后点击 Creat 创建工程<br />测试官方示例，可以点击工程名旁的 Example 进行选择<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-11.JPG" class="image"><img alt="Pico-vscode-11.JPG" src="/w/upload/thumb/3/35/Pico-vscode-11.JPG/600px-Pico-vscode-11.JPG" decoding="async" loading="lazy" width="600" height="318" srcset="/w/upload/thumb/3/35/Pico-vscode-11.JPG/900px-Pico-vscode-11.JPG 1.5x, /w/upload/thumb/3/35/Pico-vscode-11.JPG/1200px-Pico-vscode-11.JPG 2x" /></a><br />
+</li>
+<li>
+创建工程成功<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-12.JPG" class="image"><img alt="Pico-vscode-12.JPG" src="/w/upload/thumb/0/0d/Pico-vscode-12.JPG/600px-Pico-vscode-12.JPG" decoding="async" loading="lazy" width="600" height="318" srcset="/w/upload/thumb/0/0d/Pico-vscode-12.JPG/900px-Pico-vscode-12.JPG 1.5x, /w/upload/thumb/0/0d/Pico-vscode-12.JPG/1200px-Pico-vscode-12.JPG 2x" /></a><br />
+</li>
+</ol>
+<h4><span id="编译工程"></span><span class="mw-headline" id=".E7.BC.96.E8.AF.91.E5.B7.A5.E7.A8.8B">编译工程</span></h4>
+<ol>
+<li>
+选择SDK版本<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-13.JPG" class="image"><img alt="Pico-vscode-13.JPG" src="/w/upload/thumb/c/c5/Pico-vscode-13.JPG/600px-Pico-vscode-13.JPG" decoding="async" loading="lazy" width="600" height="318" srcset="/w/upload/thumb/c/c5/Pico-vscode-13.JPG/900px-Pico-vscode-13.JPG 1.5x, /w/upload/thumb/c/c5/Pico-vscode-13.JPG/1200px-Pico-vscode-13.JPG 2x" /></a><br />
+</li>
+<li>
+选择 Yes 进行高级配置<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-14.JPG" class="image"><img alt="Pico-vscode-14.JPG" src="/w/upload/thumb/6/6d/Pico-vscode-14.JPG/600px-Pico-vscode-14.JPG" decoding="async" loading="lazy" width="600" height="115" srcset="/w/upload/6/6d/Pico-vscode-14.JPG 1.5x" /></a><br />
+</li>
+<li>
+选择交叉编译链，13.2.Rel1 适用 ARM 核，RISCV.13.3 适用 RISCV 核，这里根据您的需求任意选择其中一个即可<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-15.JPG" class="image"><img alt="Pico-vscode-15.JPG" src="/w/upload/thumb/3/35/Pico-vscode-15.JPG/600px-Pico-vscode-15.JPG" decoding="async" loading="lazy" width="600" height="204" srcset="/w/upload/3/35/Pico-vscode-15.JPG 1.5x" /></a><br />
+</li>
+<li>
+CMake 版本选择 Default（前面配置的路径）<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-16.JPG" class="image"><img alt="Pico-vscode-16.JPG" src="/w/upload/thumb/1/1f/Pico-vscode-16.JPG/600px-Pico-vscode-16.JPG" decoding="async" loading="lazy" width="600" height="107" srcset="/w/upload/1/1f/Pico-vscode-16.JPG 1.5x" /></a><br />
+</li>
+<li>
+Ninja 版本选择 Default<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-17.JPG" class="image"><img alt="Pico-vscode-17.JPG" src="/w/upload/thumb/e/e6/Pico-vscode-17.JPG/600px-Pico-vscode-17.JPG" decoding="async" loading="lazy" width="600" height="131" srcset="/w/upload/e/e6/Pico-vscode-17.JPG 1.5x" /></a><br />
+</li>
+<li>
+选择开发板<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-18.JPG" class="image"><img alt="Pico-vscode-18.JPG" src="/w/upload/thumb/7/7b/Pico-vscode-18.JPG/600px-Pico-vscode-18.JPG" decoding="async" loading="lazy" width="600" height="318" srcset="/w/upload/thumb/7/7b/Pico-vscode-18.JPG/900px-Pico-vscode-18.JPG 1.5x, /w/upload/thumb/7/7b/Pico-vscode-18.JPG/1200px-Pico-vscode-18.JPG 2x" /></a><br />
+</li>
+<li>
+点击 Complie 进行编译<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-19.JPG" class="image"><img alt="Pico-vscode-19.JPG" src="/w/upload/thumb/e/e5/Pico-vscode-19.JPG/600px-Pico-vscode-19.JPG" decoding="async" loading="lazy" width="600" height="317" srcset="/w/upload/thumb/e/e5/Pico-vscode-19.JPG/900px-Pico-vscode-19.JPG 1.5x, /w/upload/thumb/e/e5/Pico-vscode-19.JPG/1200px-Pico-vscode-19.JPG 2x" /></a><br />
+</li>
+<li>
+成功编译出 uf2 格式文件即可<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-20.JPG" class="image"><img alt="Pico-vscode-20.JPG" src="/w/upload/thumb/f/f7/Pico-vscode-20.JPG/600px-Pico-vscode-20.JPG" decoding="async" loading="lazy" width="600" height="319" srcset="/w/upload/thumb/f/f7/Pico-vscode-20.JPG/900px-Pico-vscode-20.JPG 1.5x, /w/upload/thumb/f/f7/Pico-vscode-20.JPG/1200px-Pico-vscode-20.JPG 2x" /></a><br />
+</li>
+</ol>
+<h4><span id="烧录固件_2"></span><span class="mw-headline" id=".E7.83.A7.E5.BD.95.E5.9B.BA.E4.BB.B6_2">烧录固件</span></h4>
+<p>这里提供两种方法烧录固件
+</p>
+<ol>
+<li>
+使用pico-vscode插件烧录固件<br />
+将开发板连接到电脑上，点击Run直接烧录固件<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-24.jpg" class="image"><img alt="Pico-vscode-24.jpg" src="/w/upload/thumb/0/09/Pico-vscode-24.jpg/600px-Pico-vscode-24.jpg" decoding="async" loading="lazy" width="600" height="317" srcset="/w/upload/thumb/0/09/Pico-vscode-24.jpg/900px-Pico-vscode-24.jpg 1.5x, /w/upload/thumb/0/09/Pico-vscode-24.jpg/1200px-Pico-vscode-24.jpg 2x" /></a><br />
+</li>
+<li>
+手动烧录固件
+<pre>1.按住Boot按键
+2.将开发板连接到电脑上     
+3.然后会电脑会将开发板识别成一个U盘设备
+4.将.uf2文件复制到U盘中，设备就会自动重启，程序烧录成功
+</pre>
+</li>
+</ol>
+<h4><span id="导入工程"></span><span class="mw-headline" id=".E5.AF.BC.E5.85.A5.E5.B7.A5.E7.A8.8B">导入工程</span></h4>
+<ol>
+<li>
+选择工程目录，导入工程<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-23.jpg" class="image"><img alt="Pico-vscode-23.jpg" src="/w/upload/thumb/9/9b/Pico-vscode-23.jpg/600px-Pico-vscode-23.jpg" decoding="async" loading="lazy" width="600" height="317" srcset="/w/upload/thumb/9/9b/Pico-vscode-23.jpg/900px-Pico-vscode-23.jpg 1.5x, /w/upload/thumb/9/9b/Pico-vscode-23.jpg/1200px-Pico-vscode-23.jpg 2x" /></a>
+</li>
+<li>
+导入工程的 Cmake 文件不能有中文（包括注释），否则可能导致导入失败
+</li>
+<li>
+导入自己的工程需要在 Cmake 文件中加一行代码，才能正常切换 pico 和 pico2，否则即使选择 pico2，编译得到的固件仍是适用于 pico 的<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-21.JPG" class="image"><img alt="Pico-vscode-21.JPG" src="/w/upload/thumb/8/8b/Pico-vscode-21.JPG/600px-Pico-vscode-21.JPG" decoding="async" loading="lazy" width="600" height="319" srcset="/w/upload/thumb/8/8b/Pico-vscode-21.JPG/900px-Pico-vscode-21.JPG 1.5x, /w/upload/thumb/8/8b/Pico-vscode-21.JPG/1200px-Pico-vscode-21.JPG 2x" /></a>
+<pre>set(PICO_BOARD pico CACHE STRING "Board type")
+</pre>
+</li>
+</ol>
+<h4><span id="更新扩展"></span><span class="mw-headline" id=".E6.9B.B4.E6.96.B0.E6.89.A9.E5.B1.95">更新扩展</span></h4>
+<ol>
+<li>
+离线包中的扩展版本为0.15.2，安装完成后，更新至最新版本<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico-vscode-22.JPG" class="image"><img alt="Pico-vscode-22.JPG" src="/w/upload/thumb/9/9f/Pico-vscode-22.JPG/600px-Pico-vscode-22.JPG" decoding="async" loading="lazy" width="600" height="318" srcset="/w/upload/thumb/9/9f/Pico-vscode-22.JPG/900px-Pico-vscode-22.JPG 1.5x, /w/upload/thumb/9/9f/Pico-vscode-22.JPG/1200px-Pico-vscode-22.JPG 2x" /></a><br />
+</li>
+</ol>
+<h3><span id="Arduino_IDE_系列"></span><span class="mw-headline" id="Arduino_IDE_.E7.B3.BB.E5.88.97">Arduino IDE 系列</span></h3>
+<h4><span id="安装Arduino_IDE"></span><span class="mw-headline" id=".E5.AE.89.E8.A3.85Arduino_IDE">安装Arduino IDE</span></h4>
+<ol>
+<li>
+首先到<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.arduino.cc/">Arduino官网</a>下载 Arduino IDE 的安装包。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg" class="image"><img alt="Arduino下载2.0版本.jpg" src="/w/upload/thumb/0/02/Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg/600px-Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg" decoding="async" loading="lazy" width="600" height="540" srcset="/w/upload/0/02/Arduino%E4%B8%8B%E8%BD%BD2.0%E7%89%88%E6%9C%AC.jpg 1.5x" /></a>
+</li>
+<li>
+这里选择仅下载就可以了。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E4%BB%85%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%8D%90%E8%B5%A0.png" class="image"><img alt="仅下载不捐赠.png" src="/w/upload/e/e5/%E4%BB%85%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%8D%90%E8%B5%A0.png" decoding="async" loading="lazy" width="600" height="614" /></a>
+</li><li>
+下载完成后，点击安装。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:IDE%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0-1.gif" class="image"><img alt="IDE安装水印-1.gif" src="/w/upload/9/92/IDE%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0-1.gif" decoding="async" loading="lazy" width="411" height="283" /></a>
+<br /><font style="color:red;"><b>注意：安装过程中会提示你安装驱动，我们点击安装即可</b></font><br /><a href="/wiki/%E6%96%87%E4%BB%B6:Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg" class="image"><img alt="Arduino驱动安装水印.jpg" src="/w/upload/thumb/8/83/Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg/600px-Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg" decoding="async" loading="lazy" width="600" height="303" srcset="/w/upload/8/83/Arduino%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E6%B0%B4%E5%8D%B0.jpg 1.5x" /></a>
+</li>
+</ol>
+<h4><span id="Arduino_IDE中文界面"></span><span class="mw-headline" id="Arduino_IDE.E4.B8.AD.E6.96.87.E7.95.8C.E9.9D.A2">Arduino IDE中文界面</span></h4>
+<ol>
+<li>
+第一次安装完成后，打开 Arduino IDE 全是英文界面,我们可以在 File&gt;Preferences 切换成简体中文。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.jpg" class="image"><img alt="首选项-简体中文.jpg" src="/w/upload/0/0a/%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87.jpg" decoding="async" loading="lazy" width="188" height="288" /></a>
+</li>
+<li>
+在 Language 里面选择简体中文，点击 OK。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg" class="image"><img alt="首选项-简体中文ok.jpg" src="/w/upload/thumb/6/67/%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg/600px-%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg" decoding="async" loading="lazy" width="600" height="398" srcset="/w/upload/6/67/%E9%A6%96%E9%80%89%E9%A1%B9-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87ok.jpg 1.5x" /></a>
+</li>
+</ol>
+<h4><span id="在_Arduino_IDE_中安装_Arduino-Pico_Core"></span><span class="mw-headline" id=".E5.9C.A8_Arduino_IDE_.E4.B8.AD.E5.AE.89.E8.A3.85_Arduino-Pico_Core">在 Arduino IDE 中安装 Arduino-Pico Core</span></h4>
+<ol>
+<li>
+打开 Arduino IDE，点击左上角的文件，选择首选项<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E9%A6%96%E9%80%89%E9%A1%B9%E6%B0%B4%E5%8D%B0-1.png" class="image"><img alt="首选项水印-1.png" src="/w/upload/6/63/%E9%A6%96%E9%80%89%E9%A1%B9%E6%B0%B4%E5%8D%B0-1.png" decoding="async" loading="lazy" width="186" height="319" /></a>
+</li>
+<li>
+在附加开发板管理器网址中添加如下链接，然后点击 OK<br /><font style="color:red;"><b>该链接已包含 RP2040、RP2350 等版型，最新版型文件请访问 <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/earlephilhower/arduino-pico">arduino-pico</a> 获取</b></font>
+<pre>https://github.com/earlephilhower/arduino-pico/releases/download/4.5.2/package_rp2040_index.json</pre>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:Pico%E9%A6%96%E9%80%89%E9%A1%B9.png" class="image"><img alt="Pico首选项.png" src="/w/upload/thumb/6/68/Pico%E9%A6%96%E9%80%89%E9%A1%B9.png/600px-Pico%E9%A6%96%E9%80%89%E9%A1%B9.png" decoding="async" loading="lazy" width="600" height="398" srcset="/w/upload/6/68/Pico%E9%A6%96%E9%80%89%E9%A1%B9.png 1.5x" /></a>
+<br /><font style="color:red;"><b>注意：如果您已经有 ESP32 板 URL，您可以使用逗号分隔 URL，如下所示：</b></font>
+</p>
+<pre>https://dl.espressif.com/dl/package_esp32_index.json,https://github.com/earlephilhower/arduino-pico/releases/download/4.5.2/package_rp2040_index.json</pre>
+</li>
+<li>
+点击工具&gt;开发板&gt;开发板管理器&gt;搜索 Pico，由于我的电脑已经安装过了，所以显示已安装<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png" class="image"><img alt="开发板管理器.png" src="/w/upload/thumb/0/0c/%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png/600px-%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png" decoding="async" loading="lazy" width="600" height="161" srcset="/w/upload/0/0c/%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8.png 1.5x" /></a><br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8-1.png" class="image"><img alt="开发板管理器-1.png" src="/w/upload/8/80/%E5%BC%80%E5%8F%91%E6%9D%BF%E7%AE%A1%E7%90%86%E5%99%A8-1.png" decoding="async" loading="lazy" width="313" height="299" /></a>
+</li>
+</ol>
+<h5><span id="国内用户"></span><span class="mw-headline" id=".E5.9B.BD.E5.86.85.E7.94.A8.E6.88.B7">国内用户</span></h5>
+<ul><li>因为网络原因，国内用户连接 github 并不稳定，我们另外提供了一份安装包，可以跳过在线的过程</li>
+<li>安装包适用于 RP2040、RP2350</li>
+<li>若已经成功配置了 Pico 环境，可以直接跳过本章</li></ul>
+<ol>
+<li>
+下载<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pan.baidu.com/s/1-Qrbr4XijclGG0SG-CIBkA?pwd=szws">rp2040</a>压缩包，将解压的 rp2040 文件夹复制到如下路径下<pre>C:\Users\[username]\AppData\Local\Arduino15\packages</pre>
+<p><a href="/wiki/%E6%96%87%E4%BB%B6:Rp2040%E5%8C%85.png" class="image"><img alt="Rp2040包.png" src="/w/upload/thumb/f/f8/Rp2040%E5%8C%85.png/600px-Rp2040%E5%8C%85.png" decoding="async" loading="lazy" width="600" height="158" srcset="/w/upload/f/f8/Rp2040%E5%8C%85.png 1.5x" /></a>
+<br /><font style="color:red;"><b>注意：将里面用户名：[username]替换成自己的用户名</b></font>
+</p>
+</li>
+</ol>
+<h4><span id="第一次上传程序"></span><span class="mw-headline" id=".E7.AC.AC.E4.B8.80.E6.AC.A1.E4.B8.8A.E4.BC.A0.E7.A8.8B.E5.BA.8F">第一次上传程序</span></h4>
+<ol>
+<li>
+按住 Pico 板上的 BOOT 按键，将 Pico 通过 Micro USB 线接到电脑的USB接口，待电脑识别出一个可移动硬盘（RPI-RP2）后，松开按键。<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E7%BA%BF.gif" class="image"><img alt="Pico连接数据线.gif" src="/w/upload/a/ac/Pico%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E7%BA%BF.gif" decoding="async" loading="lazy" width="522" height="574" /></a>
+</li>
+<li>
+下载程序，打开 arduino\PWM\D1-LED 路径下的 D1-LED.ino
+</li>
+<li>
+点击工具&gt;端口，记住已有的 COM，不需要点击这个 COM（不同电脑显示的 COM 不一样，记住自己电脑上已有的 COM）<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico%E8%BF%9E%E6%8E%A5%E5%89%8D%E7%AB%AF%E5%8F%A3.png" class="image"><img alt="Pico连接前端口.png" src="/w/upload/f/f2/Pico%E8%BF%9E%E6%8E%A5%E5%89%8D%E7%AB%AF%E5%8F%A3.png" decoding="async" loading="lazy" width="600" height="643" /></a>
+</li>
+<li>
+用 USB 线将驱动板和计算机连接起来，再点击工具&gt;端口，第一次连接选择 uf2 Board，上传完成后，再次连接就会多出一个 COM 口<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico%E8%BF%9E%E6%8E%A5%E5%90%8Euf2.png" class="image"><img alt="Pico连接后uf2.png" src="/w/upload/f/f5/Pico%E8%BF%9E%E6%8E%A5%E5%90%8Euf2.png" decoding="async" loading="lazy" width="600" height="736" /></a>
+</li>
+<li>
+点击工具&gt;开发板&gt;Raspberry Pi Pico&gt;对应版型(Raspberry Pi Pico、Raspberry Pi Pico 2等)<br /><a href="/wiki/%E6%96%87%E4%BB%B6:%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png" class="image"><img alt="工具pico开发板.png" src="/w/upload/thumb/3/3c/%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png/600px-%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png" decoding="async" loading="lazy" width="600" height="349" srcset="/w/upload/3/3c/%E5%B7%A5%E5%85%B7pico%E5%BC%80%E5%8F%91%E6%9D%BF.png 1.5x" /></a><br /><a href="/wiki/%E6%96%87%E4%BB%B6:Arduono-Raspberrypi_pico.png" class="image"><img alt="Arduono-Raspberrypi pico.png" src="/w/upload/1/10/Arduono-Raspberrypi_pico.png" decoding="async" loading="lazy" width="600" height="55" /></a>
+</li>
+<li>设置完成后，点击向右箭头将上传程序
+<br /><a href="/wiki/%E6%96%87%E4%BB%B6:Pico%E4%B8%8A%E4%BC%A0%E7%A8%8B%E5%BA%8F.png" class="image"><img alt="Pico上传程序.png" src="/w/upload/e/ee/Pico%E4%B8%8A%E4%BC%A0%E7%A8%8B%E5%BA%8F.png" decoding="async" loading="lazy" width="359" height="88" /></a>
+</li>
+</ol>
+<ul><li><font style="color:red;"><b>如果期间遇到了问题，需要重新安装或者更换Arduino IDE版本时，卸载Arduino IDE需要卸载干净，卸载软件后需要手动删除C:\Users\[name]\AppData\Local\Arduino15这个文件夹内的所有内容（需要显示隐藏文件才能看到） 再重新安装</b></font></li></ul>
+<h3><span id="开源例程"></span><span class="mw-headline" id=".E5.BC.80.E6.BA.90.E4.BE.8B.E7.A8.8B">开源例程</span></h3>
+<p><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/waveshareteam/Pico_MircoPython_Examples">MircoPython视频例程(github)</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/b/b2/Raspberry_Pi_Pico_Demo.zip">MicroPython固件/Blink例程（C）</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/raspberrypi/pico-examples/">树莓派官方C/C++示例程序 (github)</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/raspberrypi/pico-micropython-examples">树莓派官方micropython示例程序 (github)</a><br />
+<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/earlephilhower/arduino-pico">Arduino官方C/C++示例程序 (github)</a><br />
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div class="tabbertab" title="资料" id="myresources">
+<h1><span id="资料"></span><span class="mw-headline" id=".E8.B5.84.E6.96.99">资料</span></h1>
+<h2><span id="配套资料"></span><span class="mw-headline" id=".E9.85.8D.E5.A5.97.E8.B5.84.E6.96.99">配套资料</span></h2>
+<h3><span id="示例程序"></span><span class="mw-headline" id=".E7.A4.BA.E4.BE.8B.E7.A8.8B.E5.BA.8F">示例程序</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/3/3e/RP2350B-Plus-W.zip">RP2350B-Plus-W示例程序</a></li></ul>
+<h3><span id="原理图"></span><span class="mw-headline" id=".E5.8E.9F.E7.90.86.E5.9B.BE">原理图</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/c/cd/RP2350B-Plus-W.pdf">原理图</a></li></ul>
+<h2><span id="官方资料"></span><span class="mw-headline" id=".E5.AE.98.E6.96.B9.E8.B5.84.E6.96.99">官方资料</span></h2>
+<h3><span id="树莓派官方文档"></span><span class="mw-headline" id=".E6.A0.91.E8.8E.93.E6.B4.BE.E5.AE.98.E6.96.B9.E6.96.87.E6.A1.A3">树莓派官方文档</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://hackspace.raspberrypi.org/books/micropython-pico">Raspberry Pi Pico入门学习MicroPython编程书籍（英文版）</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://magpi.raspberrypi.org/books">树莓派相关书籍下载</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/1/15/Pico-2-schematic.pdf">Pico2原理图</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/e/e0/Pico-2-Pinout.pdf">Pico2引脚分布图</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/7/7f/Getting-started-with-pico-2.pdf">Pico2入门使用手册</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/1/1f/Raspberry-pi-pico-2-c-sdk.pdf">Pico2 C SDK使用手册</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/7/7c/Raspberry-pi-pico-2-python-sdk.pdf">Pico2 Python SDK使用手册</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/8/8d/Pico-2-datasheet.pdf">Pico2数据手册</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/4/49/Rp2350-datasheet.pdf">RP2350数据手册</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/f/fa/Hardware-design-with-rp2350.pdf">RP2350硬件设计参考手册</a></li></ul>
+<h3><span id="树莓派开源例程"></span><span class="mw-headline" id=".E6.A0.91.E8.8E.93.E6.B4.BE.E5.BC.80.E6.BA.90.E4.BE.8B.E7.A8.8B">树莓派开源例程</span></h3>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/raspberrypi/pico-examples/">树莓派官方C/C++示例程序 (github)</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/raspberrypi/pico-micropython-examples">树莓派官方micropython示例程序 (github)</a></li></ul>
+<h2><span id="开发软件"></span><span class="mw-headline" id=".E5.BC.80.E5.8F.91.E8.BD.AF.E4.BB.B6">开发软件</span></h2>
+<ul><li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/7/73/Thonny-3.3.3.zip">Thonny Python IDE (Windows版本 V3.3.3)</a></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pan.baidu.com/s/11jDMcE_6bNvO11UmR5fpDA?pwd=prgc">Pico环境搭建相关软件 (百度网盘提取码：prgc ) </a> <br /></li>
+<li><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://pan.baidu.com/s/1-J656j17xe78u4dwe6DmYw?pwd=szws">pico-vscode 软件包 (百度网盘提取码：szws ) </a> <br /></li></ul>
+<p><br />
+</p>
+<h1><span class="mw-headline" id="FAQ">FAQ</span></h1>
+<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#accordion1">
+								<b>问题：</b>Raspberry Pi Pico 2 GPIO配置为下拉输入，引脚悬空时，为什么读取IO为高电平？
+							</a>
+						</h4>
+					</div>
+					<div id="accordion1" class="panel-collapse collapse in">
+						<div class="panel-body">
+<div>
+<p>可以参考<a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net/w/upload/4/49/Rp2350-datasheet.pdf">RP2350-datasheet中</a>RP2350-E9部分内容
+</p>
+</div>
+<div style="display:none;"></div>
+<div style="display:none;"></div>
+<p><font color="red" style="display:none;"></font>
+</p>
+						</div>
+					</div>
+				</div>
+</div>
+<p><br />
+</p>
+<h1><span id="技术支持"></span><span class="mw-headline" id=".E6.8A.80.E6.9C.AF.E6.94.AF.E6.8C.81">技术支持</span></h1>
+<p>联系人：庄工<br />
+EMAIL: 2880803589@qq.com<br />
+电话: 0755-83040712<br />
+QQ: 2880803589<br />
+微信：扫下方二维码添加<br />
+<a href="/wiki/%E6%96%87%E4%BB%B6:Zzy.jpg" class="image"><img alt="Zzy.jpg" src="/w/upload/thumb/3/34/Zzy.jpg/200px-Zzy.jpg" decoding="async" loading="lazy" width="200" height="200" srcset="/w/upload/thumb/3/34/Zzy.jpg/300px-Zzy.jpg 1.5x, /w/upload/3/34/Zzy.jpg 2x" /></a><br />
+</p>
+<style data-mw-deduplicate="TemplateStyles:r75601">.mw-parser-output .note{background-position:left 7px top 50%;padding:0.5em 0.5em 0.5em 40px;margin:0.5em 0;overflow:hidden;background-color:#f8f9fa;background-repeat:no-repeat;border:1px solid #ddd}.mw-parser-output .note-inline{display:inline-block;vertical-align:middle}.mw-parser-output .note-info{background-color:#f6efe5;background-size:25px;border-color:#ac6600;padding-left:40px;min-height:28px}.mw-parser-output .note-reminder{background-color:#fff9ea;background-size:25px;border-color:#fc3;min-height:28px}.mw-parser-output .note-warn{background-color:#fff9ea;background-size:25px;border-color:#fc3;min-height:28px}.mw-parser-output .note-error{background-color:#fee7e6;background-size:25px;border-color:#c33;min-height:28px}</style><div role="note" class="note note-error">说明：进行售后服务前，请准备好客户信息（定货单位、定货人等），以供验证</div></div>
+</div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20261102032600
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.166 seconds
+Real time usage: 0.181 seconds
+Preprocessor visited node count: 595/1000000
+Post‐expand include size: 42873/2097152 bytes
+Template argument size: 2171/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 1/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2482/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   46.351      1 -total
+ 37.94%   17.586      1 模板:Service38
+ 33.49%   15.521      1 模板:Note
+ 26.63%   12.345      1 模板:外围模块
+ 24.58%   11.393      1 模板:Pico-get-start
+ 20.25%    9.385      1 模板:Pico-quick-start
+  9.96%    4.619      1 模板:FAQ
+  7.63%    3.536      1 模板:Pico-list
+  6.33%    2.935      1 模板:Pico_Vscode
+  4.42%    2.050      1 模板:Pico-Kits
+-->
+
+<!-- Saved in parser cache with key ws_wiki_135_cn:pcache:idhash:28047-0!canonical!groups=* and timestamp 20261102032600 and revision id 132813
+ -->
+</div></div>								<div class="printfooter">
+				取自“<a dir="ltr" href="https://www.waveshare.net/w/index.php?title=RP2350B-Plus-W&amp;oldid=132813">https://www.waveshare.net/w/index.php?title=RP2350B-Plus-W&amp;oldid=132813</a>”				</div>
+												<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/%E7%89%B9%E6%AE%8A:%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="特殊:页面分类">分类</a>：<ul><li><a href="/wiki/%E5%88%86%E7%B1%BB:%E6%A8%A1%E5%9D%97" title="分类:模块">模块</a></li><li><a href="/wiki/%E5%88%86%E7%B1%BB:%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91%E6%9D%BF" title="分类:树莓派开发板">树莓派开发板</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">隐藏分类：<ul><li><a href="/wiki/%E5%88%86%E7%B1%BB:SPI%E6%8E%A5%E5%8F%A3" title="分类:SPI接口">SPI接口</a></li><li><a href="/wiki/%E5%88%86%E7%B1%BB:I2C%E6%8E%A5%E5%8F%A3" title="分类:I2C接口">I2C接口</a></li><li><a href="/wiki/%E5%88%86%E7%B1%BB:UART%E6%8E%A5%E5%8F%A3" title="分类:UART接口">UART接口</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+			<!-- /bodyContent -->
+		</div>
+						</div>
+				</div>
+			</div>
+			<!-- /content -->
+
+			<!-- sidebar-left -->
+			<div class="sidebar-wrapper sidebar-left-wrapper">
+				<div class="sidebar-container container">
+					<div class="row">
+						<div id="sidebar-left" class="col-md-2 col-md-offset-0">
+							<div id="tweekiTOC"></div>						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar-left -->
+					<!-- footer -->
+			<div id="footer" role="contentinfo" class="footer container footer-sticky bg-light">
+			<ul id="footer-custom"><li class="dropup"><a href="/w/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=RP2350B-Plus-W" title="我们鼓励您登录；然而，这不是强制性的[o]" accesskey="o">Login / Create Account</a></li><li class="dropup"><a href="INVALID-TITLE:[https://www.waveshare.net Copyright © 2022 深圳市微雪电子有限公司 版权所有]" id="n-.255Bhttps.253A.252F.252Fwww.waveshare.net-copyright-.25C2.25A9-2022-.25E6.25B7.25B1.25E5.259C.25B3.25E5.25B8.2582.25E5.25BE.25AE.25E9.259B.25AA.25E7.2594.25B5.25E5.25AD.2590.25E6.259C.2589.25E9.2599.2590.25E5.2585.25AC.25E5.258F.25B8-.25E7.2589.2588.25E6.259D.2583.25E6.2589.2580.25E6.259C.2589.255D"><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://www.waveshare.net">Copyright © 2022 深圳市微雪电子有限公司 版权所有</a></a></li></ul><div style="clear:both"></div>			</div>
+			<!-- /footer -->
+		
+<script>
+var fbtFancyBoxOptions = {"openEffect":"elastic","closeEffect":"elastic","helpers":{"title":{"type":"inside"}}};
+</script>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.166","walltime":"0.181","ppvisitednodes":{"value":595,"limit":1000000},"postexpandincludesize":{"value":42873,"limit":2097152},"templateargumentsize":{"value":2171,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":1,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2482,"limit":5000000},"timingprofile":["100.00%   46.351      1 -total"," 37.94%   17.586      1 模板:Service38"," 33.49%   15.521      1 模板:Note"," 26.63%   12.345      1 模板:外围模块"," 24.58%   11.393      1 模板:Pico-get-start"," 20.25%    9.385      1 模板:Pico-quick-start","  9.96%    4.619      1 模板:FAQ","  7.63%    3.536      1 模板:Pico-list","  6.33%    2.935      1 模板:Pico_Vscode","  4.42%    2.050      1 模板:Pico-Kits"]},"cachereport":{"timestamp":"20261102032600","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":321});});</script>	</body>
+</html>

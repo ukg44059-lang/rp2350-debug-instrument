@@ -1,0 +1,18 @@
+/build/
+/artifacts/
+/.cache/
+/.tmp/
+/third_party/
+/tools/arm-toolchain/
+/tools/openocd/
+/tools/cmake/
+/tools/ninja/
+/tools/python/
+/tools/pyocd/
+__pycache__/
+/packages/
+/tools/github-cli/
+# Dependency lock file is part of the project; downloaded SDKs stay local.
+!/third_party/
+/third_party/*
+!/third_party/versions.json

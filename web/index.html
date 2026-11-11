@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pulse · 八通道逻辑分析仪</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-icon">▥</span><strong>PULSE<span>逻辑分析仪</span></strong><span class="tag">8 CHANNEL</span></div><div class="top-actions"><span id="connection" class="connection"><i></i>正在检测设备</span><button id="refresh" class="quiet">重新检测</button><button id="start" class="primary">▶ 开始采集</button><button id="stop" class="danger" disabled>■ 停止</button></div></header>
+<main>
+<aside id="settings">
+<div class="aside-heading"><h2>采集设置</h2><span class="small-tag">RP2350</span></div>
+<label>采样率<select id="rate"><option value="10000">10 kS/s</option><option value="100000">100 kS/s</option><option value="250000">250 kS/s</option><option value="500000">500 kS/s</option><option value="750000">750 kS/s</option><option value="1000000">1 MS/s</option><option value="2000000">2 MS/s</option><option value="5000000">5 MS/s</option><option value="10000000" selected>10 MS/s</option></select></label>
+<div class="field-hint" id="intervalHint">每 100 ns 采样一次</div>
+<label>采集方式<select id="mode"><option value="0">连续采集 · 手动停止</option><option value="262144">单次 · 262,144 点</option><option value="1048576">单次 · 1,048,576 点</option><option value="8388608">单次 · 8,388,608 点</option></select></label>
+<label>传输编码<select id="encoding"><option value="1">自动无损压缩</option><option value="0">原始数据 · USB 吞吐测试</option></select></label>
+<p class="field-hint">重复电平无损压缩。10 MS/s 持续采集取决于信号变化率；原始流实测 750 kS/s 通过。超出 USB 带宽时明确停止。</p>
+<div class="section-label">触发</div>
+<label>触发条件<select id="trigger"><option value="0">立即开始</option><option value="1">上升沿</option><option value="2">下降沿</option></select></label>
+<div class="two-fields"><label>触发通道<select id="triggerChannel"></select></label><label>等待 / 秒<select id="timeout"><option value="1000">1</option><option value="5000" selected>5</option><option value="10000">10</option><option value="30000">30</option></select></label></div>
+<label>自动停止<select id="seconds"><option value="0">不限时</option><option value="1">1 秒</option><option value="5">5 秒</option><option value="10">10 秒</option><option value="30">30 秒</option><option value="60">60 秒</option></select></label>
+<div class="section-label">输入连接 <span>3.3 V</span></div><div id="pinmap" class="pinmap"></div>
+<p class="field-hint">GP8–GP15 → CH0–CH7<br>采样期间保留 CMSIS-DAP 接口。</p>
+<div class="section-label">数据文件</div><button id="legacy" class="file-button">↗ 打开此前真实采集</button><button id="import" class="file-button">＋ 导入 BIN / JSON / LAS</button><input id="files" type="file" accept=".bin,.json,.las" multiple hidden>
+<button id="records" class="file-button">◷ 本机采集记录</button><div id="recordList" hidden></div>
+<div class="aside-footer">PULSE / DEBUG INSTRUMENT<br><span>本地采集 · 数据保存在 G 盘项目中</span></div>
+</aside>
+<section class="workspace">
+<div class="page-heading"><div><div class="eyebrow">DIGITAL WORKSPACE</div><h1>观察每一次电平变化<span class="live-tag" id="liveTag">就绪</span></h1></div><button id="toggleSettings" class="quiet mobile-settings">☷ 设置</button><span class="clock-chip" id="clockChip">300 MHz 系统时钟</span></div>
+<div class="metrics"><div><span>实际采样率</span><strong id="statRate">—</strong><small id="statInterval">等待数据</small></div><div><span>USB 有效吞吐</span><strong id="statUsb">0.00 <em>MB/s</em></strong><small id="statRatio">无损编码 / 等待采集</small></div><div><span>已采样点数</span><strong id="statSamples">0</strong><small id="statDuration">0.000 s</small></div><div><span>设备缓冲占用</span><strong id="statBuffer">0 <em>%</em></strong><div class="buffer-track"><i id="bufferBar"></i></div></div></div>
+<div id="message" class="message info"><span>●</span><div>连接设备后点击“开始采集”，或打开此前保存的真实波形。USB 数据分块实时传输，波形自动滚动。</div></div>
+<section class="analyzer">
+<div class="wave-toolbar"><div class="toolbar-left"><span class="dot"></span><strong>数字波形</strong><span class="muted">8 路同步</span></div><div class="toolbar-buttons"><button id="zoomOut" title="缩小">−</button><button id="zoomIn" title="放大">＋</button><button id="fit">适应全部</button><select id="windowSize" aria-label="可视时间窗"><option value="0.00001">10 µs / 屏</option><option value="0.0001">100 µs / 屏</option><option value="0.001">1 ms / 屏</option><option value="0.01">10 ms / 屏</option><option value="0.1" selected>100 ms / 屏</option><option value="1">1 s / 屏</option><option value="5">5 s / 屏</option><option value="custom" disabled>自定义</option></select><button id="follow" class="selected">跟随</button><button id="pause">暂停显示</button></div></div>
+<div class="wave-body"><div class="channel-names"><div class="names-title">CHANNEL</div><div id="channels"></div></div><div class="canvas-wrap"><canvas id="wave" aria-label="八通道数字波形，滚轮缩放，拖动平移，单击设置游标"></canvas><div id="empty" class="empty"><div class="empty-wave">▁▁▔▔▁▁▔▔▁▁</div><strong>让信号说话</strong><span>真实数据将在这里实时出现</span></div></div></div>
+<div class="wave-footer"><span id="viewRange">时间窗 100 ms</span><span id="cursorReadout">单击设置 A，Shift＋单击设置 B · 滚轮缩放 · 拖动平移</span><span id="visibleCount">0 个跳变</span></div>
+</section>
+<div class="bottom-grid"><section class="session-panel"><div class="panel-title">当前采集 <span id="sessionBadge">尚未开始</span></div><div class="session-details"><div><span>数据状态</span><strong id="integrity">等待采集</strong></div><div><span>记录文件</span><strong id="recordName">—</strong></div><div><span>输入范围</span><strong>CH0–CH7 / GP8–GP15</strong></div></div><p id="sessionNote">无显示降采样、无毛刺过滤；缩小视图时显示像素内的高低电平范围。</p></section><section class="export-panel"><div class="panel-title">保留你的观察</div><p>导出当前可视时间窗，或下载完整无损采集记录。</p><div><button id="exportVcd" class="outline" disabled>↓ VCD 波形</button><button id="exportCsv" class="outline" disabled>↓ CSV 边沿</button><button id="exportLas" class="outline" disabled>↓ 完整 LAS</button></div><small>实时窗口保留最近 30 秒 / 最多 1,048,576 次跳变；完整数据持续写入磁盘。</small></section></div>
+<footer class="page-footer"><span><i></i> 本地服务 <b id="serverStatus">127.0.0.1:8765</b></span><span>USB Full Speed · 8-bit samples · PIO + DMA</span><span id="renderStatus">等待输入</span></footer>
+</section></main><script type="module" src="/app.js"></script>
+</body></html>
