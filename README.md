@@ -2,7 +2,7 @@
 
 工作目录：`G:\material\week_prj\ai_debuginstructment`。自研固件与主机工具使用 C++17，复用 Arm CMSIS-DAP 和 Pico SDK 的 C 实现。
 
-GitHub：<https://github.com/ukg44059-lang/rp2350-debug-instrument>（私有工程）。[打包与新电脑使用说明](docs/github-delivery.md)。Windows运行包与源码/资料压缩包在 Releases 提供；依赖版本记录为 `third_party/versions.json`。
+GitHub：<https://github.com/ukg44059-lang/rp2350-debug-instrument>（公开工程）。[打包与新电脑使用说明](docs/github-delivery.md)。Windows运行包与源码/资料压缩包在 Releases 提供；依赖版本记录为 `third_party/versions.json`。
 
 ## 当前实机状态
 

@@ -1,5 +1,7 @@
 # 项目工作路径
 
+- GitHub可见性偏好：用户于2026-11-10明确要求账号ukg44059-lang的全部项目公开，包括mini_cam和rp2350-debug-instrument；现有5个仓库均已核验公开，后续新建仓库默认public，不再默认private。
+
 - 最新交付：RP2350已刷 **0.3.0 / 300 MHz**，新增边采样边USB传输与8路网页（C++17本地服务+原生Canvas）。`tools/start-logic-web.ps1` 启动 http://127.0.0.1:8765/ ，服务PID记录artifacts/streaming/server.pid。256KiB双DMA环、4096点块、最长2ms合并、8×16KiB WinUSB RAW_IO读取；自动无损RLE/RAW回退。25kHz源以10MS/s连续约10秒99,999,744点、网页41,840,640点，CRC/序号/flags通过；源已恢复1000step/s。RAW750kS/s通过，1MS/s溢出；约0.8MB/s有效流，不能承诺任意信号10MS/s持续。溢出明确flags8停止，完整LAS/JSON在artifacts/web-captures，网页仅保留30秒/最多1048576次跳变；VCD/CSV导出可视窗口。指南docs/logic-web.md，报告reports/逻辑分析仪网页与USB流采样_2026-11-02.md。早期短包版25kHz源溢出已保留失败证据，合并后通过。此前输入毛刺、触发首点、SWD NoACK、pyOCD与LA句柄冲突均不能称已解决；本轮只验证流传输，未重复原严格波形回归。旧定长CLI、DAP USB自测仍通过；旧0.2.2备份artifacts/streaming/ai_debugprobe-v0.2.2-before-stream.uf2。
 
 - 历史：0.2.2/300 MHz严格波形测试18轮中7轮有毛刺/触发首点问题；详见reports/RP2350_300MHz_10MSps_实测报告_2026-11-02.md。先前E9灯未亮后改B9，用户已目视确认B9闪烁；烧录6.594秒，64KiB回读、B9电平及八路回归通过。当前 E9/B9/RT1064 高变化率信号源仍照常，速率已恢复1000 step/s。Windows pyOCD/libusb与独立LA同时开句柄曾有Windows=5；SWD密集读取NoACK仍未完全解决。
